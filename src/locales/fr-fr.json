@@ -1,0 +1,15 @@
+{
+	"locales": {
+		"en-us": "English",
+		"fr-fr": "Français",
+		"jp-ja": "日本語"
+	},
+	"nav": {
+		"home": "Accueil",
+		"blog": "Blog",
+		"about": "A propos"
+	},
+	"about": {
+		"title": "A propos"
+	}
+}
