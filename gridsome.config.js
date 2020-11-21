@@ -34,10 +34,12 @@ module.exports = {
 				// rewriteDefaultLanguage: true,
 				//enablePathGeneration: true,
 				// messages: {
-					// 	'fr-fr': require('./src/locales/en-us.json'),
-					// 	'en-us': require('./src/locales/en-us.json'),
-					// 	'jp-ja': require('./src/locales/jp-ja.json'),
+				// 	'fr-fr': require('./src/locales/en-us.json'),
+				// 	'en-us': require('./src/locales/en-us.json'),
+				// 	'jp-ja': require('./src/locales/jp-ja.json'),
 				// }
 			}
-		}]
+		},
+		''
+	]
 }
