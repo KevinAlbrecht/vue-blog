@@ -2,14 +2,21 @@
   <div class="layout">
     <header class="header">
       <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
+        <span>{{ $static.metadata.siteName }}</span>
       </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
+      <nav class="nav nav-pages">
+        <g-link class="nav__link" :to="$tp('/')">{{ $t("nav.home") }}</g-link>
+        <g-link class="nav__link" :to="$tp('/')">{{ $t("nav.blog") }}</g-link>
+        <g-link class="nav__link" :to="$tp('/about/')">{{
+          $t("nav.about")
+        }}</g-link>
+      </nav>
+      <nav class="nav nav-lang">
+        <locale-switcher></locale-switcher>
       </nav>
     </header>
-    <slot/>
+    <slot />
+    <footer></footer>
   </div>
 </template>
 
@@ -20,13 +27,20 @@ query {
   }
 }
 </static-query>
-
+<script>
+import LocaleSwitcher from "../components/LocaleSwitcher";
+export default {
+  components: { LocaleSwitcher },
+};
+</script>
 <style>
 body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
   line-height: 1.5;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .layout {
@@ -46,5 +60,14 @@ body {
 
 .nav__link {
   margin-left: 20px;
+}
+
+.nav-pages {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
 }
 </style>

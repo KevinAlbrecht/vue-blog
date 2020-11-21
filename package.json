@@ -1,12 +1,16 @@
 {
-  "name": "vue-blog",
-  "private": true,
-  "scripts": {
-    "build": "gridsome build",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore"
-  },
-  "dependencies": {
-    "gridsome": "^0.7.0"
-  }
+	"name": "vue-blog",
+	"private": true,
+	"scripts": {
+		"build": "gridsome build",
+		"develop": "gridsome develop",
+		"explore": "gridsome explore"
+	},
+	"dependencies": {
+		"@gridsome/plugin-google-analytics": "^0.1.2",
+		"@gridsome/plugin-sitemap": "^0.4.0",
+		"gridsome": "^0.7.0",
+		"gridsome-plugin-i18n": "^1.6.0",
+		"fontsource-open-sans": "^3.0.9"
+	}
 }
