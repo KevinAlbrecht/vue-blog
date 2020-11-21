@@ -2,7 +2,7 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import DefaultLayout from '~/layouts/Default.vue'
-import "fontsource-open-sans" 
+import "fontsource-open-sans"
 export default function (Vue, { router, head, isClient, appOptions }) {
 	// Set default layout as a global component
 	Vue.component('Layout', DefaultLayout)
@@ -12,4 +12,12 @@ export default function (Vue, { router, head, isClient, appOptions }) {
 	appOptions.i18n.setLocaleMessage('en-us', require('./locales/en-us.json'));
 	appOptions.i18n.setLocaleMessage('jp-ja', require('./locales/jp-ja.json'));
 
+	head.meta.push({
+		name: 'google-site-verification',
+		content: 'uGz9lYl9lLxED-WftCjT4oQopgdqOrn_TOX-4JHN8RQ'
+	});
+	head.meta.push({
+		name: 'robots',
+		content: 'index, follow, all'
+	});
 }
