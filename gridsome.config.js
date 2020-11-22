@@ -1,6 +1,23 @@
 module.exports = {
 	siteName: 'Kevin Albrecht',
 	siteUrl: 'https://www.kevinalbrecht.dev',
+	templates: {
+		Post: '/blog/:title',
+	},
+	transformers: {
+		remark: {
+			externalLinksTarget: '_blank',
+			externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+			plugins: [
+				['@gridsome/remark-prismjs',
+					{
+						customClassPrefix: 'prism--',
+						showLineNumbers: true
+					}
+				]
+			]
+		},
+	},
 	plugins: [
 		{
 			use: '@gridsome/plugin-sitemap',
@@ -40,6 +57,19 @@ module.exports = {
 				// }
 			}
 		},
-		''
+		{
+			use: '@gridsome/source-filesystem',
+			options: {
+				path: 'content/posts/**/*.*.md',
+				typeName: 'Post',
+				refs: {
+					tags: {
+						typeName: 'Tag',
+						route: '/tag/:id',
+						create: true,
+					},
+				},
+			}
+		}
 	]
 }
