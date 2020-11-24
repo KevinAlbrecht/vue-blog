@@ -6,7 +6,6 @@
       </strong>
       <nav class="nav nav-pages">
         <g-link class="nav__link" :to="$tp('/')">{{ $t("nav.home") }}</g-link>
-        <g-link class="nav__link" :to="$tp('/')">{{ $t("nav.blog") }}</g-link>
         <g-link class="nav__link" :to="$tp('/about/')">{{
           $t("nav.about")
         }}</g-link>
