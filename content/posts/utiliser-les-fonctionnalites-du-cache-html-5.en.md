@@ -6,7 +6,7 @@ date: "2015-03-20"
 description: "For several years, it became more and more important to make a web app running offline ( SPA by example ). Thanks to the HTML5 specs, many tools are awailable in two specific categories : Cache and Storage, let's see how to use them. ..."
 tags: ["html5", "cache", "manifest"]
 belongs: 
-	- fr_fr: Utiliser les fonctionnalités du cache html 5
+	- fr_fr: ""
 ---
 
 For several years, it became more and more important to make a web app running offline ( SPA by example ). Thanks to the HTML5 specs, many tools are awailable in two specific categories : Cache and Storage, let's see how to use them.
@@ -143,7 +143,7 @@ cacheFailed();
 
 Voila le résultat :
 
-![result image](/cache-mobile-view_219204D2.gif)
+![result image](/images/cache-mobile-view_219204D2.gif)
 
 Evidement pour beaucoup de WebApp le chargement sera quasi instantané depuis un ordinateur, mais avoir une barre de chargement prend du sens pour une navigation depuis un mobile ou un device où la connexion est souvent plus lente.
 

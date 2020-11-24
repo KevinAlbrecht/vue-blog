@@ -23,7 +23,7 @@ Les [directives structurelles](https://angular.io/guide/structural-directives) d
 Pour pouvoir manipuler le dom, ces directives wrap le nœud actuel du dom dans un élément <ng-template>, le nœud conserve tous ses attributs sauf la directive elle-même, qui ne devient plus qu'un simple binding sur le template, comme suit :
 
 
-{{< highlight html "linenos=table,linenostart=1" >}}
+```html
 <div *myDirective="randomProperty" > hello </div>
 
 <!-- Devient -->
@@ -41,7 +41,7 @@ Autrement dit, c'est la string donnée à votre directive.
 
 Prenons le cas le plus répandu et clair : la directive \*ngFor.
 
-{{< highlight html "linenos=table,linenostart=1" >}}
+```html
 <div *ngFor="let item of items; let i=index">
     {{item.title}}
 </div>
@@ -87,7 +87,7 @@ export class MyDirectiveContext{
 }
 ```
 
-{{< highlight html "linenos=table,linenostart=1" >}}
+```html
 <div *ngDirective=" 'Salut'; let arg; let e=event; from 'coucou' ">
     salut
 </div>
@@ -100,7 +100,7 @@ export class MyDirectiveContext{
 ```
 
 
-![microsyntaxe](/microsyntaxe.png)
+![microsyntaxe](/images/microsyntaxe.png)
 
 Maintenant nous allons créer une directive nous même.
 

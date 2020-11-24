@@ -2,7 +2,7 @@
 lang: fr
 locale: fr-fr
 title: Librairies Ngrx Pour Une Application Angular Reactive Part 2 Ngrx Effects
-date: "2018-02-12"
+date: "2018-02-13"
 description: "Les reducers sont dits \"purs\" et ne doivent donc en aucun cas récupérer une donnée autre que leurs paramètres, nous allons donc rajouter un middleware pour volontairement introduire du \"side effect\" qui représentera nos intéractions serveur. ngrx/Effects est une librairie de side effects...."
 tags: ["angular",
      "ngrx",
@@ -11,13 +11,13 @@ belongs:
 	- en_us: 
 ---
 
-Vous voici sur la partie 2 de cet article où nous allons implémenter un Effect. Si vous n'avez pas vu la première partie, c'est ici :[Librairies NGRX pour une application Angular réactive. Part 1/3 : ngrx/store](/)
+Vous voici sur la partie 2 de cet article où nous allons implémenter un Effect. Si vous n'avez pas vu la première partie, c'est ici :[Librairies NGRX pour une application Angular réactive. Part 1/3 : ngrx/store](https://www.kevinalbrecht.dev/fr/blog/librairies-ngrx-pour-une-application-angular-reactive-part-1-ngrx-store/)
 
 
 ngrx/effects
 ===
 
-![ngrx](/ngrx.png)
+![ngrx](/images/ngrx.png)
 
 ngrx/effects ?
 ---
@@ -30,7 +30,7 @@ Github →  [https://github.com/ngrx/platform/tree/master/docs/effects](https://
 
 Pour la petite visualisation je réutilise mon ancien schéma en rajoutant simplement la brique Effects:
 
-![dataflow](/ngrx2/dataflow.png)
+![dataflow](/images/ngrx2-dataflow.png)
 
 
 Création d'un Effect

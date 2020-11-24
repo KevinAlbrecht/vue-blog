@@ -5,8 +5,8 @@ title: Implémenter une GoogleMap avec AngularJS et TypeScript dans Cordova
 date: "2016-02-18"
 description: "Depuis quelques années il devient de plus en plus important de pouvoir permettre à une web application de fonctionner de façon offline (notamment pour les Single Page Applications)...."
 tags: ["angularjs",
-      "windows",
-      "cordova",
+      "Windows",
+      "Cordova",
       "typescript",
       "google map"]
 belongs: 
@@ -45,7 +45,7 @@ Le service
 
 Le service regroupe les fonctions propres à GoogleMap comme l’initialisation de la carte avec les différentes options proposées par la librairie/sdk : son type ( satellite, terrain …etc ),  le niveau de zoom maximal ou minimal, l’autorisation de certaines manipulations de la carte ou encore les coordonnées de départ. On y trouvera aussi les abonnements aux différents évènements que la carte peut lever  ( zoom_changed, center_changed …etc. )
 
-```
+```ts
 module project.Cartographie {
     export class MapSupervisorService {
         private map: google.maps.Map;
@@ -153,7 +153,7 @@ Nous allons maintenant créer la directive angular  dans laquelle devra être in
 Ici aussi la logique est plutôt simple, nous souhaitons simplement initialiser la carte dans la phase de link de notre directive.
 Mais à noter que le template de la directive n’est pas le même sur toutes les plateformes, nous faisons donc appel au MapHandler ( qui lui est spécifique par plateforme ) pour récupérer le template nécessaire.
 
-```
+```ts
 export class MapDirective implements ng.IDirective {
  
     //constructeur
@@ -207,7 +207,7 @@ Nous devons définir :
 
 * le script google à injecter, qui se trouve directement dans le constructeur de notre classe
 
-```
+```ts
 constructor(
     private $q: ng.IQService,
     private $window: ng.IWindowService,
@@ -223,7 +223,7 @@ Ici “googleMapLoaded” est une callback appelée lorsque toute l’API de goo
 
 * Un getter du template du DOM pour la directive
 
-```
+```ts
 getDirectiveTemplate(): string {
     return '<div class="map"> </div>'
 }
@@ -231,7 +231,7 @@ getDirectiveTemplate(): string {
 
 * une méthode de configuration qui permettra au mapSupervisorService de lancer l’initialisation de la carte. exemple :
 
-```
+```ts
 configure(element: string, mapConfiguration) {
     this.loadGoogleMap().then(()=>
     this.mapSupervisorService.initMap(domElement, mapConfiguration));
@@ -245,7 +245,7 @@ Windows
 c’est ici que ça devient délicat, comme l’énonce la problématique, il nous est impossible d’injecter des scripts directement dans l’application, il faut donc passer par une iframe.
 
 Commençons donc par voir le template à donner à notre directive :
-```
+```ts
 '<x-ms-webview id="master" scrolling="no" draggable="false" sandbox="allow-same-origin allow-scripts" class="map" style="position:absolute;"></x-ms-webview>'
 ```
 
@@ -257,7 +257,7 @@ Nous pouvons maintenant nous occuper de la méthode configure , en effet celle-c
 
 * l’insertion de la vue dans l’iframe
 
-```
+```ts
 var domElement = document.getElementById(element);
 this.webview = <MSHTMLWebViewElement>domElement;
 this.webview.src = "ms-appx-web:///www/views/_iframeMaster.html";
@@ -267,7 +267,7 @@ this.webview.src = "ms-appx-web:///www/views/_iframeMaster.html";
     * MSWebViewScriptNotify qui est l’évènement par défaut d’une notification venant de l’iframe.
     * MSWebViewNavigationCompleted qui permet de savoir quand l’iframe est chargé.
 
-```
+```ts
 this.webview.addEventListener("MSWebViewScriptNotify", (evt: any) => {
     var event: Cartographie.INotification = JSON.parse(evt.value)
     if (event.notificationType === Cartographie.NotificationType.Loaded) {
@@ -293,7 +293,7 @@ this.webview.addEventListener("MSWebViewNavigationCompleted", () => {
 
 Voilà pour la méthode configure, mais regardons de plus près l’initialisation des scripts GoogleMap, à exécuter cette fois-ci dans l’iframe grâce à “prepareMsWebview”
 
-```
+```ts
 (<any>window).map = null;
 (<any>window).googleMapLoaded = function () {
     notifyMethod(iframeNotification);
@@ -326,7 +326,7 @@ Dans la directive et dans le superviseur, il y a des méthodes pour modifier le 
 
 Si nous suivons la logique de l’article, voilà ce qu’il faudrait ajouter au MapHandlerForWindows pour réussir à modifier le type de carte de la GoogleMap:
 
-```
+```ts
 public mapTypeWatchCallback(mapType: MapType) {
     this.loadGoogleMap().then(() => {
         var setMapTypeMethod = this.makeAutoEvaluable(
@@ -351,7 +351,7 @@ public mapTypeWatchCallback(mapType: MapType) {
 *Comment sérialiser une méthode et ses paramètres de façon générique ?*
 
 Voilà une astuce très utile (et plutôt sexy ) pour ce qui est de communiquer avec une iframe, proposé par [Thomas Ouvré](https://blogs.infinitesquare.com/users/touvre)
-```
+```ts
 private makeAutoEvaluable(func: (...args: any[]) => any, ...args: any[]): string {
     return `(${(<any>func).toString()})(${args.join(",")});`;
 }
@@ -364,7 +364,7 @@ on passe en paramètre une fonction ou nous allons définir le code à exécuter
 
 Maintenant jetons un œil à un cas concret d’utilisation, nous avons parlé de la méthode “prepareMsWebview”, voilà le code réel de la fonction.
 
-```
+```ts
 private prepareMsWebview() {
  
     return this.makeAutoEvaluable(

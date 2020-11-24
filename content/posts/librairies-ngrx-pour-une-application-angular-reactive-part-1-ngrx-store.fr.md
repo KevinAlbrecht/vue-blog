@@ -11,7 +11,7 @@ belongs:
 	- en_us: 
 ---
 
-Mon article précédent traitait globalement de l'architecture proposée par Redux pour des web app dites "réactives". Je vous recommande de le lire si vous n'êtes pas familier avec Redux : [Le State management pour les webapps avec Redux.](/)
+Mon article précédent traitait globalement de l'architecture proposée par Redux pour des web app dites "réactives". Je vous recommande de le lire si vous n'êtes pas familier avec Redux : [Le State management pour les webapps avec Redux.](https://www.kevinalbrecht.dev/fr/blog/Le-State-management-pour-les-webapps-avec-Redux)
 
 Maintenant, sur le même sujet, nous allons nous concentrer sur les applications Angular et nous allons voir des librairies de la team ngrx. Cet article est divisé en 3 parties :
 
@@ -21,7 +21,7 @@ Maintenant, sur le même sujet, nous allons nous concentrer sur les applications
 
 ngrx/store
 ===
-![ngrx](/ngrx.png)
+![ngrx](/images/ngrx.png)
 
 Notions
 ===
@@ -44,7 +44,7 @@ Il faut bien dissocier 2 types de composants dans l'architecture Redux, la diff�
 
 exemple:
 
-![container vs presentational](/ngrx1/components.png)
+![container vs presentational](/images/ngrx-components.png)
 
 Mise en place 
 ===
@@ -247,7 +247,7 @@ Pour rappel, notre observable movies$ sera donc résolu 2 fois car notre Reducer
 
 La vue:
 
-{{< highlight html "linenos=table,linenostart=1" >}}
+```html
 <h2>There is {{(movies$|async).data.length}} movies</h2>
 <span [hidden]="!(movies$|async).loading">Loading...</span>
 <span>{{(movies$|async).error}}</span>
@@ -304,4 +304,4 @@ Voila
 
 Jusqu'ici le store est mis en place, nous sommes capables de dispatcher une action, et de récupérer un nouveau state en fonction, nous avons vu plusieurs points comme le pipe async pour résoudre les observables, la stratégie de détection OnPush pour rajouter un peu d'immutabilité dans nos composants.
 
-Mais nous n'avons pas de données, je vous invite à passer à la partie 2 de cet article qui montrera comment appeler un service Angular ou tout autre élément externe grâce aux side-effects (volontaires), ça se trouve ici : [Librairies NGRX pour une application Angular réactive. Part 2/3 : ngrx/Effects](/)
+Mais nous n'avons pas de données, je vous invite à passer à la partie 2 de cet article qui montrera comment appeler un service Angular ou tout autre élément externe grâce aux side-effects (volontaires), ça se trouve ici : [Librairies NGRX pour une application Angular réactive. Part 2/3 : ngrx/Effects](https://www.kevinalbrecht.dev/fr/blog/librairies-ngrx-pour-une-application-angular-reactive-part-2-ngrx-effects/)

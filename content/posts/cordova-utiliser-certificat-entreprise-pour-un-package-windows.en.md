@@ -1,25 +1,25 @@
 ---
-{
-	"title": "Use enterprise certificate for windows Cordova package",
-   	"date": "2016-02-11",
-   	"description": "Dealing with windows applications you may have to use enterprise certificate but unlike simple Windows 8.1/10 app, in Cordova we can't just press a button to import a certificate...",
-   	"tags": [
-      "Windows",
+lang: en
+locale: en-us
+title: Use enterprise certificate for windows Cordova package
+date: "2016-02-11"
+description: "Dealing with windows applications you may have to use enterprise certificate but unlike simple Windows 8.1/10 app, in Cordova we can't just press a button to import a certificate..."
+tags: ["Windows",
       "Cordova",
-      "Certificat"
-   	],
-}
+      "Certificat"]
+belongs: 
+	- en_us: 
 ---
 Dealing with windows applications you may have to use enterprise certificate but unlike simple Windows 8.1/10 app, in Cordova we can't just press a button to import a certificate.
 
-The task il simple but just a bit longer than traditional native apps here is the process :
+The task is simple but just a bit longer than traditional native apps here is the process :
 
 First: Install and add the certificate.
 --------------------------------------------------
 
 Indeed you have to install the certificate, when you are at the installation options, don't forget to select the current user then the "personal store" to avoid issues at the build. Then add the certificate in the native resources folder.
 
-![result image](/cert_6B272457.png)
+![result image](/images/cert_6B272457.png)
 
 Second : thet the Thumbprint
 ------------------------------------
@@ -28,7 +28,7 @@ You have to give the Thumbprint, to find it, open PowerShell and execute the fol
 
 **Get-ChildItem -path cert:\LocalMachine\My**
 
-![result image](/cert_6717AA8B.png)
+![result image](/images/cert_6717AA8B.png)
 
 Third : Configure build informations
 ---
@@ -37,7 +37,7 @@ We'll now fill the build.json file in the root of your project.
 
 It may already contains the following build information in depending on platform and the release/debug state.
 
-```javascript
+```batch
 {
   "windows": {
     "release": {

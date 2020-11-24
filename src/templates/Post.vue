@@ -9,6 +9,7 @@
       ></PostHeader>
       <p v-html="$page.post.content"></p>
     </article>
+    <Disqus shortname="kalbrecht-dev" />
   </Layout>
 </template>
 
@@ -35,10 +36,23 @@ timeToRead
 
 <script>
 import PostHeader from "../components/PostHeader";
+import { Disqus } from "vue-disqus";
+
 export default {
-  components: { PostHeader },
+  components: { PostHeader, Disqus },
 };
 </script>
 
 <style>
+a {
+  color: #2a7ae2;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  margin-bottom: 50px;
+}
 </style>

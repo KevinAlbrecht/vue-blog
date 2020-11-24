@@ -15,6 +15,7 @@
 		"fontsource-open-sans": "^3.0.9",
 		"gridsome": "^0.7.0",
 		"gridsome-plugin-i18n": "^1.6.0",
-		"moment": "^2.29.1"
+		"moment": "^2.29.1",
+		"vue-disqus": "^4.0.1"
 	}
 }

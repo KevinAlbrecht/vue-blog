@@ -13,13 +13,13 @@ belongs:
 
 ---
 
-Voici la derniere partie sur les librairies NGRX, si vous n'avez pas déjà vu les précédentes, ça commence là → :[Librairies NGRX pour une application Angular réactive. Part 1/3 : ngrx/store](/)
+Voici la derniere partie sur les librairies NGRX, si vous n'avez pas déjà vu les précédentes, ça commence là → :[Librairies NGRX pour une application Angular réactive. Part 1/3 : ngrx/store](https://www.kevinalbrecht.dev/fr/blog/librairies-ngrx-pour-une-application-angular-reactive-part-1-ngrx-store)
 
 
 ngrx/router-store
 ===
 
-![ngrx](/ngrx.png)
+![ngrx](/images/ngrx.png)
 
 ngrx/router-store ?
 ---

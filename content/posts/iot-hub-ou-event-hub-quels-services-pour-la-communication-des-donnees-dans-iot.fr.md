@@ -59,4 +59,4 @@ Event Hub
 
 Nous allons maintenant créer un Event Hub. Pour cela commencez par vous connecter sur le [portail Azure classique](https://manage.windowsazure.com/), puis dans la catégorie "Service Bus" cliquez sur créer, assignez un nom, une zone et laisser le type en "messagerie" et non Hub de notification (qui lui est un hub d’évènement dédié à la Push Notification)
 
-![CreationServiceBusForIot_4DF1A8D1](/CreationServiceBusForIot_4DF1A8D1.png)
+![CreationServiceBusForIot_4DF1A8D1](/images/CreationServiceBusForIot_4DF1A8D1.png)

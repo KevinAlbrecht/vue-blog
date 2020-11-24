@@ -21,7 +21,7 @@ Dans un premier temps nous allons disposer d’une méthode retournant une promi
 
 Cette méthode sera appelée avant chaque exécution nécessitant d’être certain que les script soient chargés ( comme l’initialisation de la carte par exemple )
 
-```
+```ts
 private waitingLoadGoogleMapDeferred: ng.IDeferred<void>[] = [];
 private isLoaded: boolean = false;
 
@@ -41,7 +41,7 @@ public loadGoogleMap(): ng.IPromise<void> {
 *La methode loadGoogleMap renverra directement une promise résolue ou bien stockée dans un tableau.*
 
 Maintenant il ne nous reste plus qu’à dépiler les deferred dans la callback qui nous assure que les ressources sont chargées.
-```
+```ts
 (<any>this.$window).googleMapLoaded = () => {
     this.isLoaded = true;
  
@@ -54,7 +54,7 @@ Maintenant il ne nous reste plus qu’à dépiler les deferred dans la callback 
 
 Et voila, tout ce qui touchera de près ou de loin à la GoogleMap sera appelé de la sorte
 
-```
+```ts
 loadGoogleMap().then(
 ()=>{
     //Manipulation de la carte

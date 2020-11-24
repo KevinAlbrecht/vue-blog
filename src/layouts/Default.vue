@@ -34,8 +34,6 @@ export default {
 </script>
 <style src="~/assets/styles/style.css"></style>
 <style>
-
-
 .layout {
   max-width: 760px;
   margin: 0 auto;
@@ -62,5 +60,9 @@ export default {
 a {
   text-decoration: none;
   color: #333;
+}
+
+footer {
+  height: 50px;
 }
 </style>

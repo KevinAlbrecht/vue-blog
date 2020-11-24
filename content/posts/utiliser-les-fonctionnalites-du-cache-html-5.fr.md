@@ -6,7 +6,7 @@ date: "2015-03-20"
 description: "Depuis quelques années il devient de plus en plus important de pouvoir permettre à une web application de fonctionner de façon offline (notamment pour les Single Page Applications)..."
 tags: ["html5", "cache", "manifest"]
 belongs: 
-	- en_us: Html 5 Cache Features
+	- en_us: ""
 
 ---
 
@@ -138,7 +138,7 @@ cacheFailed();
 
 Voila le résultat :
 
-![result image](/cache-mobile-view_219204D2.gif)
+![result image](/images/cache-mobile-view_219204D2.gif)
 
 Evidement pour beaucoup de WebApp le chargement sera quasi instantané depuis un ordinateur, mais avoir une barre de chargement prend du sens pour une navigation depuis un mobile ou un device où la connexion est souvent plus lente.
 

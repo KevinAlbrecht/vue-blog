@@ -34,14 +34,14 @@ Pour le moment on peut considérer qu'un State représente plusieurs éléments 
 
  L'idée de base est de pouvoir représenter l'état d'une application en un seul endroit afin d’obtenir un data flow one way. On peut voir le comportement problématique et la solution que nous souhaitons apporter par le schema suivant :
 
-![47133006-86ab-4c72-b9d9-a2c18c18cce3_global dataflow.png](/globalDataflow.png)
+![47133006-86ab-4c72-b9d9-a2c18c18cce3_global dataflow.png](/images/globalDataflow.png)
 
 Pour se faire on va voir l'architecture proposée par Redux. 
 
 Qu'est ce que Redux 
 ===
 
-![redux](/redux.png)
+![redux](/images/redux.png)
 
 Redux est une simple librairie Javascript , agnostique de tout framework SPA ou autre ( bien que couramment utilisé dans un environnent React ). Il met à disposition un pattern de gestion d'état via plusieurs éléments  représentant un data flow oneway cyclique.
 
@@ -68,7 +68,7 @@ Maintenant que les principes de base sont posés, nous allons voir les élément
 
 Tout ceci représente notre Store, qui est la brique de gestion d'état et qui peut être représentée comme suit :
 
-![dataflow](/dataflow.png)
+![dataflow](/images/dataflow.png)
 
 Pour bien comprendre le flux, un composant A représentant un formulaire HTML, souhaite soumettre un champ texte dont la valeur doit s'afficher à l'écran.
 
@@ -249,4 +249,4 @@ La notion de state management nous apporte les bénéfices suivants
  * Plus de facilité pour tester l'application ➜ Grâce à la propriété "pure" des fonctions
 
  Voila pour la partie théorique je vous propose maintenant de suivre sur l'article suivant dont le sujet est l'implémentation avec ngrx dans le cadre d'une application Angular.
-Rendez-vous par là -> [Librairies NGRX pour une application Angular réactive. Part 1/3 : ngrx/store](/)
+Rendez-vous par là -> [Librairies NGRX pour une application Angular réactive. Part 1/3 : ngrx/store](https://www.kevinalbrecht.dev/fr/blog/librairies-ngrx-pour-une-application-angular-reactive-part-1-ngrx-store/)

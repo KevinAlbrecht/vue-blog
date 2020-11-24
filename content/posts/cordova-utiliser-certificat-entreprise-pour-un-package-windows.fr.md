@@ -20,7 +20,7 @@ Première étape: Installer et ajouter le certificat
 
 En effet il est nécessaire d’installer le certificat, lorsque vous êtes sur les options d’installation, pensez à bien sélectionner l’utilisateur courant puis le magasin“Personnel” pour éviter toute erreur lors de la build, puis ajoutez le certificat dans le dossier de ressources native.
 
-![result image](/cert_6B272457.png)
+![result image](/images/cert_6B272457.png)
 
 2eme étape : récupérer le Thumbprint
 ------------------------------------
@@ -31,7 +31,7 @@ Il faut renseigner le Thumbprint du certificat, pour le trouver il vous suffit d
 
 Et voila le résultat, vous allez pouvoir récupérer le thumbprint correspondant.
 
-![result image](/cert_6717AA8B.png)
+![result image](/images/cert_6717AA8B.png)
 
 3eme étape : Configurer les informations de build
 ---
