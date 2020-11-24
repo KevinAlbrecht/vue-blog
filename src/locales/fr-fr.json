@@ -4,6 +4,9 @@
 		"fr-fr": "Français",
 		"jp-ja": "日本語"
 	},
+	"common": {
+		"mins": "minutes de lecture"
+	},
 	"nav": {
 		"home": "Accueil",
 		"blog": "Blog",

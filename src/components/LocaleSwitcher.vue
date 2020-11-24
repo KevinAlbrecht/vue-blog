@@ -15,9 +15,10 @@
 export default {
   methods: {
     localeChanged(evt) {
+      const nextRoute = this.$route.path;
       this.currentLocale = evt.target.lang;
       this.$router.push({
-        path: this.$tp(this.$route.path, this.currentLocale, true),
+        path: this.$tp("/", this.currentLocale, true),
       });
     },
   },
@@ -35,16 +36,20 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 200px;
 }
 
 #lang-container .locale {
   color: #333;
   cursor: pointer;
+  margin-right: 20px;
+}
+
+#lang-container .locale:last-child {
+  margin-right: 0;
 }
 
 #lang-container .locale:hover {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px inset #333;
 }
 
 #lang-container .locale.selected {

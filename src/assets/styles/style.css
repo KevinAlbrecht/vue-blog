@@ -1,0 +1,29 @@
+body {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 18px;
+
+  color: rgb(49, 49, 49);
+}
+
+h1, h2, h3 {
+    color: #1a8765;
+    font-weight: 400;
+    text-rendering: optimizelegibility;
+    text-size-adjust: 100%;
+    margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+p {
+  box-sizing: border-box;
+  display: block;
+  font-size: 18px;
+  font-weight: 300;
+}

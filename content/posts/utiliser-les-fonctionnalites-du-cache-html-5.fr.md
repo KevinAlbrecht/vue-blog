@@ -1,18 +1,23 @@
 ---
-lang: fr-fr
-slug: html5-cache-features-fr
-title: Html 5 Cache Features fr
+lang: fr
+locale: fr-fr
+title: Utiliser les fonctionnalités du cache html 5
+date: "2015-03-20"
+description: "Depuis quelques années il devient de plus en plus important de pouvoir permettre à une web application de fonctionner de façon offline (notamment pour les Single Page Applications)..."
+tags: ["html5", "cache", "manifest"]
+belongs: 
+	- en_us: Html 5 Cache Features
+
 ---
 
 Depuis quelques années il devient de plus en plus important de pouvoir permettre à une web application de fonctionner de façon offline (notamment pour les Single Page Applications). Grace aux spécifications HTML5 de nombreux outils sont à notre disposition dans 2 catégories , le Storage et le Cache. Ici nous allons voir comment exploiter les fonctionnalités du Cache à bon escient.
 
-Comment fonctionne le cache HTML 5 ?
-====================================
+## Comment fonctionne le cache HTML 5 ?
+
 
 Le cache HTML5 est une spécification qui apporte une logique unique aux navigateurs pour gérer les ressources (html, javascript, CSS, images …etc), il est compatible avec tous les navigateurs récents et à partir d'Internet Explorer 10. Il est possible de le configurer via un simple fichier appelé: “manifest”.
 
-Cache Manifest
---------------
+### Cache Manifest
 
 Pour pouvoir configurer le cache il nous suffit donc de créer son manifeste "cache.manifest" par exemple, puis de le référencer comme ceci sur toutes les pages de votre application :
 ```html
@@ -33,7 +38,7 @@ Voilà un exemple:
 
 ```
 CACHE MANIFEST
-# 18-03-2015 v1.1.7
+## 18-03-2015 v1.1.7
 
 CACHE:
 index.html
@@ -44,8 +49,7 @@ NETWORK:
 *
 ```
 
-Explications
-------------
+### Explications
 
 Lors de la première navigation sur le site, le navigateur va télécharger la page HTML comme il le ferait pour tout autre site web et si l’attribut manifest est renseigné le navigateur va alors  récupérer le manifeste avec le chemin donné, puis requêter toutes les ressources spécifiées dans la section CACHE  pour les stocker dans le cache avec le manifeste courant. Suite à ça le navigateur requêtera les autres ressources simplement avec ou sans fallback suivant votre configuration.
 
@@ -53,12 +57,11 @@ Lors de la première navigation sur le site, le navigateur va télécharger la p
 
 Lorsque le navigateur accèdera une prochaine fois sur l’application web, il récupèrera automatiquement les ressources ( spécifiés dans la section CACHE ) depuis son cache sans les requêter au serveur, le manifeste coté serveur sera évalué pour vérifier si ce dernier a été modifié, d’où l’importance d’ajouter un en tête avec la version et/ou la date de mise à jour  de vos ressources car même si vous ne modifiez pas la configuration de votre manifeste il est nécessaire de déclarer une nouvelle version de celui-ci pour que les clients téléchargent une nouvelle fois les ressources si vous avez effectué une modification sur l’une d’elles.
 
-API Javascript Offline
-======================
+## API Javascript Offline
+
 Maintenant que nous connaissons le fonctionnement de la mise en cache, intéressons nous à l’API Javascript
 
-ApplicationCache API
---------------------
+### ApplicationCache API
 
 Les navigateurs ont aussi accès à l’objet window.applicationCache qui nous permet d’interagir avec le cache de l’application, cet objet nous met à disposition d’abord une suite d’évènements en fonction de l’état de la mise en cache :
 
@@ -73,8 +76,7 @@ Les navigateurs ont aussi accès à l’objet window.applicationCache qui nous p
 
 L’objet nous permet aussi d’accéder à l’état de la mise en cache aussi via la propriété status et enfin expose les methodes update() pour lancer une la vérification d’une nouvelle version des ressources et swapCache() pour remplacer le cache avec un nouveau.
 
-Exemple d’utilisation de l’API pour créer une progress-bar
-----------------------------------------------------------
+### Exemple d’utilisation de l’API pour créer une progress-bar
 
 Nous voulons créer une barre de progression qui indique l’état de chargement des ressources lors de l’initialisation d’une WebApp. Le processus est simple, afficher la progression dés la mise en cache des ressources, la faire progresser en fonction de l’avancement puis afficher le résultat si tout s’est bien passé ou si une erreur est survenue.
 
@@ -108,7 +110,7 @@ function cacheSucceed() {
 
 Et maintenant les abonnements aux évenements :
 
-```
+```js
 applicationCache.addEventListener('downloading', function (e) {
 showProgressBar();
 }, false);

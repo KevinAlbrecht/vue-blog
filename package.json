@@ -14,6 +14,7 @@
 		"@gridsome/transformer-remark": "^0.6.3",
 		"fontsource-open-sans": "^3.0.9",
 		"gridsome": "^0.7.0",
-		"gridsome-plugin-i18n": "^1.6.0"
+		"gridsome-plugin-i18n": "^1.6.0",
+		"moment": "^2.29.1"
 	}
 }

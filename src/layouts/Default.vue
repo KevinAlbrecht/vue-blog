@@ -33,15 +33,9 @@ export default {
   components: { LocaleSwitcher },
 };
 </script>
+<style src="~/assets/styles/style.css"></style>
 <style>
-body {
-  font-family: "Roboto";
-  margin: 0;
-  padding: 0;
-  line-height: 1.5;
-  font-weight: 400;
-  font-size: 18px;
-}
+
 
 .layout {
   max-width: 760px;

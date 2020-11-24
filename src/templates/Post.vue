@@ -1,19 +1,43 @@
 <template>
   <Layout>
-    <h1>{{ $page.post.title }}</h1>
-    <p v-html="$page.post.content"></p>
+    <article>
+      <PostHeader
+        :date="$page.post.date"
+        :title="$page.post.title"
+        :tags="$page.post.tags"
+        :timeToRead="$page.post.timeToRead"
+      ></PostHeader>
+      <p v-html="$page.post.content"></p>
+    </article>
   </Layout>
 </template>
+
 <page-query>
-	query Post ($path: String!) {
-		post: post (path: $path) {
+	query Post ($id: ID!) {
+		post: post (id: $id) {
+			locale
 			title
-content
+			date
+			content,
+timeToRead
+			belongs {
+				fr_fr 
+				en_us
+			}
+			tags {
+				id
+				title
+				path
+			}
 		}
 	}
 </page-query>
+
 <script>
-export default {};
+import PostHeader from "../components/PostHeader";
+export default {
+  components: { PostHeader },
+};
 </script>
 
 <style>

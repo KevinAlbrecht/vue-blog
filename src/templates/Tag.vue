@@ -1,12 +1,21 @@
 <template>
-	<span>Tag</span>
+<Layout>
+	<span>{{$page.tag.title}}</span>
+</Layout>
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>
+
+<page-query>
+	query Tag ($id: ID!) {
+		tag: tag (id: $id) {
+			id
+			title
+		}
+	}
+</page-query>
 
 <style>
 

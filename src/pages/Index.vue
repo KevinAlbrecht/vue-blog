@@ -4,46 +4,37 @@
     <g-image alt="Example image" src="~/favicon.png" width="135" />
 
     <h1>Hello, world!</h1>
-
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
       excepturi labore tempore expedita, et iste tenetur suscipit explicabo!
       Dolores, aperiam non officia eos quod asperiores
     </p>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener"
-        >Gridsome Docs</a
-      >
-      <a
-        href="https://github.com/gridsome/gridsome"
-        target="_blank"
-        rel="noopener"
-        >GitHub</a
-      >
-    </p>
-
     <section>
-      <BlogPostPreview
-        v-for="edge in $page.blogPosts.edges"
-        :key="edge.node.id"
-        :post="edge.node"
-      ></BlogPostPreview>
+      <article v-for="edge in $page.posts.edges" :key="edge.node.id">
+        <PostPreview :post="edge.node"></PostPreview>
+      </article>
     </section>
   </Layout>
 </template>
 
 <page-query>
 query ($locale: String){
-  blogPosts: allPost(filter: { lang: {eq:$locale} }) {
+  posts: allPost(filter: { locale: {eq:$locale} } sortBy: "title", order: DESC ) {
     totalCount
     edges {
       node {
         path
-        title,
+        title
         id
-        fileInfo {directory}
         tags {id path __typename}
+				timeToRead
+				date
+				description
+				tags {
+					id
+					title
+					path
+				}
       }
     }
   }
@@ -52,9 +43,9 @@ query ($locale: String){
 </page-query>
 
 <script>
-import BlogPostPreview from '../components/BlogPostPreview';
+import PostPreview from "../components/PostPreview";
 export default {
-components:{BlogPostPreview},
+  components: { PostPreview },
   metaInfo: {
     title: "Hello, world!",
   },
@@ -64,5 +55,12 @@ components:{BlogPostPreview},
 <style>
 .home-links a {
   margin-right: 1rem;
+}
+section article {
+	padding: 50px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+section article:last-child {
+  border: none;
 }
 </style>

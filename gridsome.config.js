@@ -3,6 +3,7 @@ module.exports = {
 	siteUrl: 'https://www.kevinalbrecht.dev',
 	templates: {
 		Post: '/blog/:title',
+		Tag: '/tag/:title',
 	},
 	transformers: {
 		remark: {
@@ -11,7 +12,6 @@ module.exports = {
 			plugins: [
 				['@gridsome/remark-prismjs',
 					{
-						customClassPrefix: 'prism--',
 						showLineNumbers: true
 					}
 				]
@@ -37,23 +37,20 @@ module.exports = {
 			options: {
 				locales: [
 					'fr-fr',
-					'en-us',
-					'jp-ja'
+					'en-us'
 				],
 				pathAliases: {
 					'fr-fr': 'fr',
-					'en-us': 'en',
-					'jp-ja': 'jp'
+					'en-us': 'en'
 				},
 				// fallbackLocale: 'en-us',
 				defaultLocale: 'en-us',
-				enablePathRewrite: false,
+				enablePathRewrite: true,
 				// rewriteDefaultLanguage: true,
 				//enablePathGeneration: true,
 				// messages: {
 				// 	'fr-fr': require('./src/locales/en-us.json'),
 				// 	'en-us': require('./src/locales/en-us.json'),
-				// 	'jp-ja': require('./src/locales/jp-ja.json'),
 				// }
 			}
 		},
@@ -65,7 +62,6 @@ module.exports = {
 				refs: {
 					tags: {
 						typeName: 'Tag',
-						route: '/tag/:id',
 						create: true,
 					},
 				},

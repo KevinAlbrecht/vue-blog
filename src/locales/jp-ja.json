@@ -4,6 +4,9 @@
 		"fr-fr": "Français",
 		"jp-ja": "日本語"
 	},
+	"common": {
+		"mins": "分"
+	},
 	"nav": {
 		"home": "Home",
 		"blog": "ブログ",

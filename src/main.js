@@ -3,16 +3,19 @@
 
 import DefaultLayout from '~/layouts/Default.vue';
 import "fontsource-open-sans";
+// import 'prismjs/themes/prism.css'
 import 'prismjs/themes/prism-tomorrow.css'
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
+import moment from 'moment';
 
 export default function (Vue, { head, appOptions }) {
 	Vue.component('Layout', DefaultLayout)
+	Vue.prototype.$moment = moment;
+	Vue.prototype.$templateEventBus = new Vue();
 
 	// Hot Reload
 	appOptions.i18n.setLocaleMessage('fr-fr', require('./locales/fr-fr.json'));
 	appOptions.i18n.setLocaleMessage('en-us', require('./locales/en-us.json'));
-	appOptions.i18n.setLocaleMessage('jp-ja', require('./locales/jp-ja.json'));
 
 	head.meta.push({
 		name: 'google-site-verification',
