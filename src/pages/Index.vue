@@ -19,7 +19,7 @@
 
 <page-query>
 query ($locale: String){
-  posts: allPost(filter: { locale: {eq:$locale} } sortBy: "title", order: DESC ) {
+  posts: allPost(filter: { locale: {eq:$locale} } sortBy: "date", order: DESC ) {
     totalCount
     edges {
       node {
