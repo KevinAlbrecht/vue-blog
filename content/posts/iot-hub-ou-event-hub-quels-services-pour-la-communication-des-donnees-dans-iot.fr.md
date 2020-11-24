@@ -59,4 +59,14 @@ En ce qui concerne l'IoT Hub, je vous conseille vivement de regarder l'article [
 
 Nous allons maintenant créer un Event Hub. Pour cela commencez par vous connecter sur le [portail Azure classique](https://manage.windowsazure.com/), puis dans la catégorie "Service Bus" cliquez sur créer, assignez un nom, une zone et laisser le type en "messagerie" et non Hub de notification (qui lui est un hub d’évènement dédié à la Push Notification)
 
-![CreationServiceBusForIot_4DF1A8D1](/images/CreationServiceBusForIot_4DF1A8D1.png)
+![CreationServiceBusForIot](/images/iot-hub/CreationServiceBusForIot.png)
+
+Une fois le service Bus créé, naviguez dessus pour atteindre la catégorie " Hub d'évènements" pour en créer un comme suit :
+
+![CreationEventHub](/images/iot-hub/CreationEventHubForIot.png)
+
+Voilà votre Event Hub créé. Il ne vous reste plus qu'à créer une stratégie d'accès partagé depuis l’onglet “configurer” de votre Hub comme suit afin de pouvoir consommer le service
+
+![CreationEventHub](/images/iot-hub/azure-event-hub-strategy.jpg)
+
+Enfin la chaine de connexion est à récupérer au niveau du service bus directement.
