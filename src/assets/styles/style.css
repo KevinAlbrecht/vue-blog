@@ -27,9 +27,18 @@ h1 {
   font-size: 36px;
 }
 
+a {
+  color: #2a7ae2;
+  text-decoration: none;
+}
+
 p {
   box-sizing: border-box;
   display: block;
   font-size: 18px;
   font-weight: 300;
+}
+
+img {
+  max-width:100% ;
 }

@@ -9,7 +9,7 @@
       ></PostHeader>
       <p v-html="$page.post.content"></p>
     </article>
-    <Disqus shortname="kalbrecht-dev" />
+    <!-- <Disqus shortname="kalbrecht-dev" /> -->
   </Layout>
 </template>
 
@@ -43,15 +43,7 @@ export default {
 };
 </script>
 
-<style>
-a {
-  color: #2a7ae2;
-}
-
-img {
-  width: 100%;
-}
-
+<style scoped>
 header {
   margin-bottom: 50px;
 }

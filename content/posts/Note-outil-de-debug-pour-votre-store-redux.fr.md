@@ -51,8 +51,7 @@ Il vous faut juste importer le module du package dans votre module angular avec 
 
 Attention si, en Prod, vous voulez importer ce module ou non ; vous pouvez jouer avec les options ou la variable d’environnement pour ça.
 
-## Fonctionnalités
-### Les tableaux de bord
+## Les tableaux de bord
 Commençons par le premier menu déroulant en haut à gauche où il est écrit "Inspector". Nous pouvons choisir ici 3 boards différents:
 
  - Inspector: vue classique divisé en 2 parties
@@ -78,7 +77,7 @@ Il y a 3 actions possibles (visibles en les survolant de la souris ):
 
 ![redux-devtool-chart.png](/images/redux-devtool-chart.png)
 
-### Les actions possibles
+## Conclusion, les actions possibles
 
 Comme je l'ai dit, il existe pas mal d'outils pour le rejeu des actions durant l'utilisation de l'application :
 

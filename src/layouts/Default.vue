@@ -57,10 +57,6 @@ export default {
   flex: 1;
 }
 
-a {
-  text-decoration: none;
-  color: #333;
-}
 
 footer {
   height: 50px;
