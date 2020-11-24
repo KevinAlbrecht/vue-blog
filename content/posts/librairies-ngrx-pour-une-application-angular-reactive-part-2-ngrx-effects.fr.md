@@ -14,13 +14,13 @@ belongs:
 Vous voici sur la partie 2 de cet article où nous allons implémenter un Effect. Si vous n'avez pas vu la première partie, c'est ici :[Librairies NGRX pour une application Angular réactive. Part 1/3 : ngrx/store](https://www.kevinalbrecht.dev/fr/blog/librairies-ngrx-pour-une-application-angular-reactive-part-1-ngrx-store/)
 
 
-ngrx/effects
-===
+## ngrx/effects
+
 
 ![ngrx](/images/ngrx.png)
 
-ngrx/effects ?
----
+### ngrx/effects ?
+
 
 Les reducers sont dits "purs" et ne doivent donc en aucun cas récupérer une donnée autre que leurs paramètres, nous allons donc rajouter un middleware pour volontairement introduire du "side effect" qui représentera nos intéractions serveur.
 
@@ -33,8 +33,8 @@ Pour la petite visualisation je réutilise mon ancien schéma en rajoutant simpl
 ![dataflow](/images/ngrx2-dataflow.png)
 
 
-Création d'un Effect
----
+### Création d'un Effect
+
 
  ⚐ J'ai au préalable créé un Service angular MovieService afin de récupérer de la donnée via une potentielle API.
 
@@ -88,8 +88,8 @@ EffectsModule.forFeature(effects)
 
 ⚐ Code complet (article parties 1 & 2) disponible ici : [https://github.com/Bubbuls/ngrx-demo](https://github.com/Bubbuls/ngrx-demo)
 
-Voila !
----
+### Voila !
+
 
 Pas si compliqué, nous pouvons maintenant retester notre application qui cette fois se déroulera différement.
 En effet, dans la première partie, l'application ne faisait que renvoyer un state signifiant que le chargement de la donnée était en cours, mais cette fois la requête asynchrone de récupération de données renvoie une action elle aussi, qui nous donnera un tout nouveau state avec de la data, cool !

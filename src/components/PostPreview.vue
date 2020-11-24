@@ -6,7 +6,7 @@
       :tags="post.tags"
       :timeToRead="post.timeToRead"
     ></PostHeader>
-    <p>{{ post.description }}</p>
+    <p v-if="!cut">{{ post.excerpt }} ...</p>
     <g-link class="post__link" :to="$tp(post.path)"></g-link>
   </div>
 </template>
@@ -15,7 +15,7 @@
 import PostHeader from "./PostHeader";
 
 export default {
-  props: ["post"],
+  props: ["post", "cut"],
   components: { PostHeader },
 };
 </script>

@@ -15,15 +15,13 @@ En ce qui concerne les application pour la plateforme Windows, il peut arriver m
 
 La tâche est très simple mais juste un peu plus longue que pour les applications traditionnelles, voilà les étapes de packaging:
 
-Première étape: Installer et ajouter le certificat
---------------------------------------------------
+## Première étape: Installer et ajouter le certificat
 
 En effet il est nécessaire d’installer le certificat, lorsque vous êtes sur les options d’installation, pensez à bien sélectionner l’utilisateur courant puis le magasin“Personnel” pour éviter toute erreur lors de la build, puis ajoutez le certificat dans le dossier de ressources native.
 
 ![result image](/images/cert_6B272457.png)
 
-2eme étape : récupérer le Thumbprint
-------------------------------------
+## 2eme étape : récupérer le Thumbprint
 
 Il faut renseigner le Thumbprint du certificat, pour le trouver il vous suffit d’ouvrir PowerShell et d’exécuter la commande suivante :
 
@@ -33,8 +31,8 @@ Et voila le résultat, vous allez pouvoir récupérer le thumbprint correspondan
 
 ![result image](/images/cert_6717AA8B.png)
 
-3eme étape : Configurer les informations de build
----
+### 3eme étape : Configurer les informations de build
+
 
 Allons maintenant remplir le fichier build.json qui se trouve à la racine de votre projet.
 

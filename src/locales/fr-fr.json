@@ -7,6 +7,9 @@
 	"common": {
 		"mins": "minutes de lecture"
 	},
+	"tag": {
+		"title": "Tous les articles sur: "
+	},
 	"nav": {
 		"home": "Accueil",
 		"blog": "Blog",

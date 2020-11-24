@@ -7,6 +7,9 @@
 	"common": {
 		"mins": "mins read"
 	},
+	"tag": {
+		"title": "Everything about: "
+	},
 	"nav": {
 		"home": "Home",
 		"blog": "Blog",

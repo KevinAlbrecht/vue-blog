@@ -13,8 +13,8 @@ belongs:
 	- en_us: 
 ---
 
-Introduction
-===
+## Introduction
+
 
 Récemment nous avons dû afficher une GoogleMap dans une application Cordova.
 
@@ -28,8 +28,8 @@ Si ce n’est pas déjà fait, je vous invite vivement à lire l’article de S�
 
 Dans cet article nous allons voir comment implémenter 2 mécanismes différents tout en conservant un maximum de code commun
 
-Implémentation
-===
+## Implémentation
+
 L’implémentation se fera en 3 parties principales:
 
 * Un service Angular MapSupervisorService  chargé de contenir toutes les méthodes de manipulation de la carte.
@@ -40,8 +40,8 @@ L’implémentation se fera en 3 parties principales:
 
 *(Voir schéma utilisé dans l’article de Sebastien O. cité précédemment)*
 
-Le service
----
+### Le service
+
 
 Le service regroupe les fonctions propres à GoogleMap comme l’initialisation de la carte avec les différentes options proposées par la librairie/sdk : son type ( satellite, terrain …etc ),  le niveau de zoom maximal ou minimal, l’autorisation de certaines manipulations de la carte ou encore les coordonnées de départ. On y trouvera aussi les abonnements aux différents évènements que la carte peut lever  ( zoom_changed, center_changed …etc. )
 
@@ -97,8 +97,8 @@ module project.Cartographie {
 
 *(MapSupervisorService)*
 
-La directive principale
----
+### La directive principale
+
 
 Nous allons maintenant créer la directive angular  dans laquelle devra être injecté le MapHandler, le second service angular.
 
@@ -145,8 +145,8 @@ export class MapDirective implements ng.IDirective {
 ```
 *(MapSupervisorService)*
 
-La directive principale
----
+### La directive principale
+
 
 Nous allons maintenant créer la directive angular  dans laquelle devra être injecté le MapHandler, le second service angular.
 
@@ -194,8 +194,8 @@ export class MapDirective implements ng.IDirective {
 
 *(MapDirective)*
 
-Le MapHandler
----
+### Le MapHandler
+
 
 Jusqu’ici tout est assez abstrait, nous allons voir le MapHandler, le cœur de notre solution qui va joindre la directive au service
 
@@ -317,8 +317,8 @@ Il ne faut pas oublier que notre méthode sera sérialisée afin d’être envoy
 
 Et voilà. vous disposez maintenant d’une carte Google initialisée dans votre webview et pour exécuter un appel à la carte il ne vous reste plus qu’à sérialiser l’action et l’envoyer grâce à l’invokescript.
 
-En complément
-===
+## En complément
+
 
 *Un dernier exemple d’instruction vers la ms-webview ?*
 

@@ -14,6 +14,7 @@
         <PostPreview :post="edge.node"></PostPreview>
       </article>
     </section>
+{{$context}}
   </Layout>
 </template>
 
@@ -29,7 +30,7 @@ query ($locale: String){
         tags {id path __typename}
 				timeToRead
 				date
-				description
+				excerpt
 				tags {
 					id
 					title

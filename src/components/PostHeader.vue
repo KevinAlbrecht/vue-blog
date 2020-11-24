@@ -4,7 +4,7 @@
     <small class="date">{{ $moment(date).format("MMMM DD YYYY") }}</small>
     <small>{{ timeToRead }} {{ $t("common.mins") }}</small>
     <small class="tags">
-      <g-link v-for="tag in tags" :key="tag.id" :to="tag.path" class="tag">
+      <g-link v-for="tag in tags" :key="tag.id" :to="$tp(tag.path)" class="tag">
         {{ tag.title }}
       </g-link>
     </small>

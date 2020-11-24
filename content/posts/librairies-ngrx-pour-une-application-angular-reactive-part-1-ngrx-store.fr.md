@@ -19,20 +19,20 @@ Maintenant, sur le même sujet, nous allons nous concentrer sur les applications
  * ngrx/effects: une librairie de side-effect, pour nous permettre de communiquer avec une donnée externe ( ex: une API ).
  * ngrx/router-store: tout simplement un pont entre notre router angular et le store redux.
 
-ngrx/store
-===
+## ngrx/store
+
 ![ngrx](/images/ngrx.png)
 
-Notions
-===
+## Notions
 
-Qu'est ce que ngrx/store ?
----
+
+### Qu'est ce que ngrx/store ?
+
 Le ngrx/store est tout simplement une librairie fournissant les éléments (actions, dispatcher, reducer ...etc.) pour une architecture "reactive" type state management, basée sur Redux. Elle fonctionne avec RxJS ( donc Observable based ), implémentée avec Typescript et donc tout bonnement adaptée pour Angular.
 
 Github → [https://github.com/ngrx/platform/tree/master/docs/store](https://github.com/ngrx/platform/tree/master/docs/store)
-Container components vs Presentational Components
----
+### Container components vs Presentational Components
+
 Il faut bien dissocier 2 types de composants dans l'architecture Redux, la différence est très simpliste :
 
  * Le Container Component fait partie du dataflow de Redux
@@ -46,11 +46,11 @@ exemple:
 
 ![container vs presentational](/images/ngrx-components.png)
 
-Mise en place 
-===
+## Mise en place 
 
-Introduction
----
+
+### Introduction
+
 ⚐ Je passe sur certains détails Typescript, imports de modules ...etc. Et je ne montre pas tout le découpage, mais tout ceci est visible via un lien vers le code complet à la fin de l'article, enjoy.
 
 Pour l'exemple, nous allons créer un simple listing d'éléments, en l'occurence des films (pour info je pars d'une application générée par la cli angular, attention nous réutiliserons ce projet pour les parties 2 et 3 de cet article)
@@ -64,8 +64,8 @@ Dans l'ordre nous allons voir:
     * Les Selectors
  * Un appel depuis un component
 
-Création des Actions
----
+### Création des Actions
+
 
 Tout d'abord nous allons créer des actions liées aux différents états de la récupération d'un film. Pour rappel une action est simplement une association d'un type et d'un payload.
 
@@ -98,8 +98,8 @@ export class GetMovieActionError implements Action {
 ```
 ⚐ Attention, on implémente l'interface "Action" cependant elle ne possède que la propriété type (le payload ayant été enlevé de l'interface ...), le moyen le plus répandu est de rajouter la propriété en public directement dans le constructeur.
 
-Création du Reducer
----
+### Création du Reducer
+
 
 Pour pouvoir créer notre Reducer j'ai besoin d'avoir un State, simple interface avec une propriété Data pour contenir la donnée ( en l'occurence un tableau de Movie ), un booléen pour signifier si nous sommes en chargement et une erreur. Nous verrons après comment rattacher ce modèle au Store.
 
@@ -158,8 +158,8 @@ Plusieurs points à noter là-dessus. La fonction reducer prend en paramètre un
 
 A noter aussi que nous prenons le state initial par défaut et que le Reducer modifie uniquement les propriétés nécéssaires, en l'occurence, lors de l'événement "GET_MOVIES" je spécifie à mon state qu'il est en chargement et donc le isLoading passe à true, lors d'un success ou d'un cas d'erreur, j'élimine cet etat de chargement et je nourris respectivement la data ou l'erreur avec le payload.
 
-Définition du State
----
+### Définition du State
+
 
 Il faut voir le State de notre application comme un arbre, il y aura differents niveaux et accesseurs suivant la donnée que l'on souhaite acquérir.
 
@@ -186,8 +186,8 @@ export const reducers: ActionReducerMap<ElementsState> = {
 
 Où cette fois-ci "reducer" correspond bien à notre fonction créée précédemment.
 
-Création des Selectors
----
+### Création des Selectors
+
 
 Pour pouvoir accèder à un élément de notre state, il faut créer des Selectors.
 Il y a 2 types de Selectors, les FeatureSelector et les simples Selector, vous l'aurez compris, le FeatureSelector nous permet de récupérer au top-level le State d'une feature et les autres, des grappes à l'interieur de la feature, voici un exemple :
@@ -207,8 +207,8 @@ export const getAllMovies = createSelector(getMoviesState, getMovies);
 
 Ok, jusqu'ici on a déjà bien représenté le data flow de notre Store, nous pouvons dispatcher notre premiere action depuis un component.
 
-Appel depuis un composant
----
+### Appel depuis un composant
+
 
 Container component
 
@@ -299,8 +299,8 @@ export class MoviesComponent {
 
 ⚐ Code complet (article parties 1 & 2) disponible ici : [https://github.com/Bubbuls/ngrx-demo](https://github.com/Bubbuls/ngrx-demo)
 
-Voila
-===
+## Voila
+
 
 Jusqu'ici le store est mis en place, nous sommes capables de dispatcher une action, et de récupérer un nouveau state en fonction, nous avons vu plusieurs points comme le pipe async pour résoudre les observables, la stratégie de détection OnPush pour rajouter un peu d'immutabilité dans nos composants.
 

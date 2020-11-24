@@ -16,13 +16,13 @@ belongs:
 Voici la derniere partie sur les librairies NGRX, si vous n'avez pas déjà vu les précédentes, ça commence là → :[Librairies NGRX pour une application Angular réactive. Part 1/3 : ngrx/store](https://www.kevinalbrecht.dev/fr/blog/librairies-ngrx-pour-une-application-angular-reactive-part-1-ngrx-store)
 
 
-ngrx/router-store
-===
+## ngrx/router-store
+
 
 ![ngrx](/images/ngrx.png)
 
-ngrx/router-store ?
----
+### ngrx/router-store ?
+
 
 la librairie router-store est tout simplement un pont pour faire communiquer le router Angular à notre store, l'idée est de renforcer la notion de "single source of truth" du pattern Redux.
 
@@ -35,8 +35,8 @@ Nous allons voir 3 points principaux, fonctionnements que nous rajoutons au proj
  - La navigation via un Effect ?
 
 
-Intégrer le routeSnapshot à notre state
----
+### Intégrer le routeSnapshot à notre state
+
 
 Comme pour notre state créé dans la partie 1/3 nous allons rajouter un enregistrement dans le module de notre application (facultatif si l'on choisit de tout enregistrer en tant que root)
 
@@ -84,8 +84,8 @@ export const getSelectedMoviesState = createSelector(getElementsState, getRouter
 
 Et voila, pour la suite nous n'utiliserons pas ce dernier sélecteur, mais plutôt le premier afin de récupérer uniquement les données de la route avant de récupérer la donnée finale dans le composant.
 
-Récupérer une donnée automatiquement en fonction de la route
----
+### Récupérer une donnée automatiquement en fonction de la route
+
 
 Nous savons requêter les données du routeur, mais il serait dommage, si l'on veut récupérer de la data à afficher en fonction de la route de devoir d'abord requêter l'un, puis l'autre.
 
@@ -190,8 +190,8 @@ this.selectedMoviesState$ = this.store.select<any>(getSelectedMovies);
         this.store.dispatch(new GetSelectedMovieAction());
 ```
 
-Naviguer depuis un effect
----
+### Naviguer depuis un effect
+
 
 La navigation aussi peut être ajoutée dans le cycle.
 
@@ -254,8 +254,8 @@ Maintenant nous pouvons considérer lors d’une erreur de récupération de don
 
 Dans les faits, la navigation directement depuis un composant , en passant par le Router.navigate() n’est pas vraiment anti-pattern par ailleurs, à la version 2 du framework , le package contenait des actions natives « Go ,Back ,Foreward… »  qui se sont avérées plutôt négligeables et retirées du package à la version 4.x .
 
-Conclusion
----
+### Conclusion
+
 
 C'est la fin de cette première série d'articles sur la librairie Ngrx, nous avons vu les briques principales et suffisantes pour débuter une application complète.
 

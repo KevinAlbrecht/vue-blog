@@ -15,8 +15,8 @@ belongs:
 J'ai beaucoup utilisé les directives structurelles sans avoir pris le temps de me demander comment ça fonctionnait, cependant la "mycrosyntaxe" d'angular paraissait suffisamment puissante pour y faire un détour, initialement je me suis souvent demander ce qui était possible de faire grace aux templates angular, alors voyons comment cela fonctionne.
 
 
-La surface de l'iceberg
-===
+## La surface de l'iceberg
+
 
 Les [directives structurelles](https://angular.io/guide/structural-directives) d'angular sont les directives qui manipulent les éléments du dom, reconnaissables du fait qu'elles commencent toutes par un asterisk, comme par exemple \*ngIf et \*ngFor.
  
@@ -33,8 +33,8 @@ Pour pouvoir manipuler le dom, ces directives wrap le nœud actuel du dom dans u
 </ng-template>
 ```
 
-La microsyntaxe
-===
+## La microsyntaxe
+
 
 L'exemple précédent était simple, ici on va  aller plus loins et s'intéresser à la microsyntaxe qui est un langage dédié ( ou Domain Language Specific ) et qui permet de créer le template avec tous les bindings nécessaires.
 Autrement dit, c'est la string donnée à votre directive.
@@ -62,18 +62,18 @@ Le parser dédié a permit de déterminer 3 elements clef :
 
 une fois les éléments identifiés, ils sont replacé dans le template.
 
-Mais d'ou ça sort tout ça ?
----
+### Mais d'ou ça sort tout ça ?
+
 
 Tout d'abord le mot clef "of " est une propriété appartenant à la directive ngFor, la microsyntaxe définit les propriétés comme étant préfixés par le nom de la directive, donc of fait référence à la propriété ngForOf et contrairement aux let-** ici c'est un binding type @Input().
 
 En suite "let " représente un [template input variable](https://angular.io/guide/template-syntax) c'est à dire une variable à laquelle nous aurons accès, scopé dans le template ( donc aussi à ses enfants ), leurs valeurs viennent de la directive elle-même, mais nous allons voir ça par la suite
 
-Contenu d'une directive structurelle
-===
+## Contenu d'une directive structurelle
 
-Création
----
+
+### Création
+
 
 Ok, avant de commencer à créer notre directive il faut savoir qu'une directive de ce type est composé d'un contexte, celui-ci est un objet contenant toutes les propriétés dont nous avons besoin ( les fameux let-i et let-item dans l'exemple du \*ngFor ) ainsi qu'une propriété spéciale "$implicit" qui représente la référence de tout ce qui n'est pas assigné par une valeur dans la microsyntaxe. Avec un schema ça passe mieux ↓
 
@@ -186,8 +186,8 @@ export class MyDirective{
 
 Voila, seulement à ce stade , rien ne se passe, car nous disposons bien d'une balise <ng-template> mais sans contenu !
 
-Manipulation du DOM
----
+### Manipulation du DOM
+
 
 Pour créer des vues embedded, il suffit d'utiliser le templateRef et le viewContainerRef afin de créer une vues enfant basé sur un template donné.
 On va faire quelque chose de semblable à la directive \*ngFor, tout à l'heure nous avions splité notre chaine de caractères, nous allons créer une vue pour chacune des cases du tableau obtenu.
@@ -219,8 +219,7 @@ Code complet et démo sur le Stackblitz ci-dessous ↓↓
 
 <iframe src="https://stackblitz.com/edit/kal-structural-directive?embed=1&amp;file=src/app/my.directive.ts" width="770" height="800px"></iframe>
 
-Bonus
-===
+## Bonus
 
 Si vous etes habitué du pipe async d'angular vous devez parfois voir ce genre de code
 

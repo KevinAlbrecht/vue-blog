@@ -10,18 +10,18 @@ belongs:
 	- en_us: 
 ---
 
-Introduction
-===
+## Introduction
 
-Problématique
----
+
+### Problématique
+
 
 Dans une web app simple, par défaut on va permettre à nos composants de consommer de la donnée : un composant peut lire, créer ou éditer une donnée "A" , tandis qu'un autre peut lui aussi modifier cette donnée "A", et qu'un troisième composant va pouvoir éditer une propriété de la donnée "A". Il est facile d'avoir la référence d'un objet distribué à droite à gauche et de permettre un accès vers de multiples composants.
 
 Aïe, le problème avec ce genre de process est qu'il se schématise par une grande toile d'araignée d'accès et de modification de donnée un peu partout, chaque cas totalement dépendant du contexte, ce qui devient très dur à suivre et à debugger …
 
-State management
----
+### State management
+
 
 C'est là qu'intervient la notion de State Management.
 Pour le moment on peut considérer qu'un State représente plusieurs éléments :
@@ -38,15 +38,15 @@ Pour le moment on peut considérer qu'un State représente plusieurs éléments 
 
 Pour se faire on va voir l'architecture proposée par Redux. 
 
-Qu'est ce que Redux 
-===
+## Qu'est ce que Redux 
+
 
 ![redux](/images/redux.png)
 
 Redux est une simple librairie Javascript , agnostique de tout framework SPA ou autre ( bien que couramment utilisé dans un environnent React ). Il met à disposition un pattern de gestion d'état via plusieurs éléments  représentant un data flow oneway cyclique.
 
-Les principes
----
+### Les principes
+
 Voici les 3 principes de Redux :
 
  * Single source of truth: l'état de l'application globale est stocké dans un "store" unique.
@@ -57,8 +57,8 @@ Voici les 3 principes de Redux :
 
 Ces fonctions sont apppelées "Reducers".
 
-Dataflow
----
+### Dataflow
+
 
 Maintenant que les principes de base sont posés, nous allons voir les éléments qui composent le flux de donnée de notre pattern suivi d'un exemple concret:
 
@@ -76,8 +76,8 @@ La soumission du formulaire va donc appeler un dispatcher en lui précisant une 
 
 Le dispatcher, lui, va contacter le réducer correspondant au type d'action et lui demander de mettre à jour l'état de notre application. Le reducer retournera donc un nouveau State qui contiendra la valeur à notre composant initial.
 
-Exemple simpliste d'implémentation
----
+### Exemple simpliste d'implémentation
+
 
 Postulat
 
@@ -227,8 +227,8 @@ function subscribe(fn) {
 Code complet ici ==> [https://jsfiddle.net/mv9jads1/](https://jsfiddle.net/mv9jads1/)
 
 
-Quelle solution
-===
+## Quelle solution
+
 
 Il existe plusieurs librairies JS, la plupart basées sur Redux, sensiblement similaires plus ou moins adaptées en fonction du projet comme par exemple :
 
@@ -238,8 +238,8 @@ Il existe plusieurs librairies JS, la plupart basées sur Redux, sensiblement si
  * [Ngrx](https://github.com/ngrx/platform)  ➜ Basé sur Redux, mais comprend des Observable, spécialisé pour Angular
  * ...
 
-Conclusion
-===
+## Conclusion
+
 
 La notion de state management nous apporte les bénéfices suivants 
 
