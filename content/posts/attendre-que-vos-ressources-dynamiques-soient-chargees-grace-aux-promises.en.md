@@ -12,7 +12,7 @@ belongs:
 
 In a webapp, when you deal with loading dynamic/external resources Dans une webApp, it could be mandatory to wait the loading to be complete before your app use thoses resources. I will take as example my [google-map use case](https://www.kevinalbrecht.dev/blog/), in this case we loaded dynamically the google (map) scripts.
 
-First, we create a function that return a Promise, which can be already resolved or not, depending on a property "isLoaded".
+First, we create a function that return a Promise, which can be already resolved or not, depending on a property *isLoaded*.
 
 This function will be called before any action which need the dynamic scripts to be loaded ( like the init of the map).
 
@@ -33,7 +33,7 @@ public loadGoogleMap(): ng.IPromise<void> {
 }
 ```
 
-*The loadGoogleMap function return a "resolve" or the reference to the current promise, stored in ad array representings every "subscribers".*
+*The loadGoogleMap function return a *resolve* or the reference to the current promise, stored in ad array representings every "subscribers".*
 
 Now a callback for unstacking the deferred when the scripts are loaded.
 ```ts

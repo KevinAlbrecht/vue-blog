@@ -12,7 +12,7 @@ belongs:
 	- en_us: 
 ---
 
-J'ai beaucoup utilisé les directives structurelles sans avoir pris le temps de me demander comment ça fonctionnait, cependant la "mycrosyntaxe" d'angular paraissait suffisamment puissante pour y faire un détour, initialement je me suis souvent demander ce qui était possible de faire grace aux templates angular, alors voyons comment cela fonctionne.
+J'ai beaucoup utilisé les directives structurelles sans avoir pris le temps de me demander comment ça fonctionnait, cependant la *mycrosyntaxe* d'angular paraissait suffisamment puissante pour y faire un détour, initialement je me suis souvent demander ce qui était possible de faire grace aux templates angular, alors voyons comment cela fonctionne.
 
 
 ## La surface de l'iceberg
@@ -53,21 +53,21 @@ Prenons le cas le plus répandu et clair : la directive \*ngFor.
 </ng-template>
 ```
 
-On peut identifier la microsyntaxe qui est "let item of items; let i=index" 
+On peut identifier la microsyntaxe qui est *let item of items; let i=index* 
 Le parser dédié a permit de déterminer 3 elements clef :
 
- - les mot clef "let " étaient des attributs.
- - le mot clef "of " un binding de type @Input() nommé "ngForOf".
- - notre directive initiale "ngFor ".
+ - les mot clef *let * étaient des attributs.
+ - le mot clef *of * un binding de type @Input() nommé *ngForOf*.
+ - notre directive initiale *ngFor *.
 
 une fois les éléments identifiés, ils sont replacé dans le template.
 
 ### Mais d'ou ça sort tout ça ?
 
 
-Tout d'abord le mot clef "of " est une propriété appartenant à la directive ngFor, la microsyntaxe définit les propriétés comme étant préfixés par le nom de la directive, donc of fait référence à la propriété ngForOf et contrairement aux let-** ici c'est un binding type @Input().
+Tout d'abord le mot clef *of * est une propriété appartenant à la directive ngFor, la microsyntaxe définit les propriétés comme étant préfixés par le nom de la directive, donc of fait référence à la propriété ngForOf et contrairement aux let-** ici c'est un binding type @Input().
 
-En suite "let " représente un [template input variable](https://angular.io/guide/template-syntax) c'est à dire une variable à laquelle nous aurons accès, scopé dans le template ( donc aussi à ses enfants ), leurs valeurs viennent de la directive elle-même, mais nous allons voir ça par la suite
+En suite *let * représente un [template input variable](https://angular.io/guide/template-syntax) c'est à dire une variable à laquelle nous aurons accès, scopé dans le template ( donc aussi à ses enfants ), leurs valeurs viennent de la directive elle-même, mais nous allons voir ça par la suite
 
 ## Contenu d'une directive structurelle
 
@@ -75,7 +75,7 @@ En suite "let " représente un [template input variable](https://angular.io/gu
 ### Création
 
 
-Ok, avant de commencer à créer notre directive il faut savoir qu'une directive de ce type est composé d'un contexte, celui-ci est un objet contenant toutes les propriétés dont nous avons besoin ( les fameux let-i et let-item dans l'exemple du \*ngFor ) ainsi qu'une propriété spéciale "$implicit" qui représente la référence de tout ce qui n'est pas assigné par une valeur dans la microsyntaxe. Avec un schema ça passe mieux ↓
+Ok, avant de commencer à créer notre directive il faut savoir qu'une directive de ce type est composé d'un contexte, celui-ci est un objet contenant toutes les propriétés dont nous avons besoin ( les fameux let-i et let-item dans l'exemple du \*ngFor ) ainsi qu'une propriété spéciale *$implicit* qui représente la référence de tout ce qui n'est pas assigné par une valeur dans la microsyntaxe. Avec un schema ça passe mieux ↓
 
 
 Postulat :
@@ -210,7 +210,7 @@ il ne reste plus qu'à appeler la directive dans une vue
 </p>
 ```
 
-Et voila vous savez l'essentiel sur les directives structurelles. Maintenant les syntaxes comme ngIf="condition else otherTemplate" deviennent clair, tout comme le fait qu'angular nous limite à une seule directive structurelle par balise, forcément il serait difficile pour 2 directives de vouloir manipuler le même DOM en simultané. Du coup la derniere question à se poser c'est :component ou directive ?
+Et voila vous savez l'essentiel sur les directives structurelles. Maintenant les syntaxes comme *ngIf="condition else otherTemplate"* deviennent clair, tout comme le fait qu'angular nous limite à une seule directive structurelle par balise, forcément il serait difficile pour 2 directives de vouloir manipuler le même DOM en simultané. Du coup la derniere question à se poser c'est :component ou directive ?
 
 En fait je dirai que les 2 ont un role bien different, on va répondre à une demande de structuration avec les components, qui sont les briques principales de l'application et au contraire plutot répondre à un besoin de logique et de dynamisme avec les directives structurelles qui sont plus souples (intéraction facile avec l'host ou lels éléments enfants), un exemple simple serait un tableau dynamique qui peut , dans chaque case afficher différent type de donnée : texte brut, input de formulaire, boutton ..etc, le tableau en lui même sera un composant, tandis qu'on va jouer sur les template pour fournir le bon format de donnée dans les cases.
 
@@ -230,4 +230,4 @@ Si vous etes habitué du pipe async d'angular vous devez parfois voir ce genre d
 </div>
 ```
 
-Le mot clef "as" est propre à la microsyntaxe (donc utilisable au sein d'un template) et permet d'exporter une valeur vers une nouvelle variable. Via une directive vide de logique on va pouvoir réutiliser ce qui est fait ci-dessus sans être obligé d'utiliser un ngIf qui va masquer votre template si la condition n'est pas remplie. ( voir "mySecondDirective" sur le stackblitz )
+Le mot clef *as* est propre à la microsyntaxe (donc utilisable au sein d'un template) et permet d'exporter une valeur vers une nouvelle variable. Via une directive vide de logique on va pouvoir réutiliser ce qui est fait ci-dessus sans être obligé d'utiliser un ngIf qui va masquer votre template si la condition n'est pas remplie. ( voir *mySecondDirective* sur le stackblitz )

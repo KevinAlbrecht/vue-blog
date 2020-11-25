@@ -4,6 +4,7 @@ module.exports = {
 	templates: {
 		Post: '/blog/:title',
 		Tag: '/tag/:title',
+		About: '/:title',
 	},
 	transformers: {
 		remark: {
@@ -43,15 +44,8 @@ module.exports = {
 					'fr-fr': 'fr',
 					'en-us': 'en'
 				},
-				// fallbackLocale: 'en-us',
 				defaultLocale: 'en-us',
 				enablePathRewrite: true,
-				// rewriteDefaultLanguage: true,
-				//enablePathGeneration: true,
-				// messages: {
-				// 	'fr-fr': require('./src/locales/en-us.json'),
-				// 	'en-us': require('./src/locales/en-us.json'),
-				// }
 			}
 		},
 		{
@@ -65,6 +59,13 @@ module.exports = {
 						create: true,
 					},
 				},
+			}
+		},
+		{
+			use: '@gridsome/source-filesystem',
+			options: {
+				path: 'content/about/*.md',
+				typeName: 'About',
 			}
 		}
 	]

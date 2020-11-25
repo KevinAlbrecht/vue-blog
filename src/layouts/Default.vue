@@ -5,7 +5,7 @@
         <div>
           <span class="title">Kevin ALBRECHT</span>
           <g-link class="nav__link" :to="$tp('/')">{{ $t("nav.home") }}</g-link>
-          <g-link class="nav__link" :to="$tp('/about/')">{{
+          <g-link class="nav__link" :to="$tp(`/${$context.locale === 'en-us'?'about':'a-propos'}`)">{{
             $t("nav.about")
           }}</g-link>
         </div>

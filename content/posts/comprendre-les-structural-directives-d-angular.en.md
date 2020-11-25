@@ -11,7 +11,7 @@ belongs:
 	- en_us: 
 ---
 
-I used a lot of structural directives without taking the time to understand how it works, but when you look at the "mycrosyntaxe" it seems interesting enough to look over it and see what can we do in a template node.
+I used a lot of structural directives without taking the time to understand how it works, but when you look at the *mycrosyntaxe* it seems interesting enough to look over it and see what can we do in a template node.
 
 ## The tip of the iceberg
 
@@ -45,11 +45,11 @@ Let's look the most common directive: \*ngFor.
 </ng-template>
 ```
 
-We can identify the microsyntax: "let item of items; let i=index" 
+We can identify the microsyntax: *let item of items; let i=index* 
 the dedicated parser found 3 key points: 
- - The "let" keyword are attributes.
- - The "of" keyword if a simple binding of type @Input() nammed "ngForOf".
- - Our directive "ngFor".
+ - The *let* keyword are attributes.
+ - The *of* keyword if a simple binding of type @Input() nammed *ngForOf*.
+ - Our directive *ngFor*.
 
 One identified they are replaced in our template.
 
@@ -63,7 +63,7 @@ Then *let* represent a [template input variable](https://angular.io/guide/templa
 
 ### The creation
 
-before creating our own structural directive, we need to understand that a directive is made with a context, the context is an object, carrying every properties we need ( the values passed by the *let-\*\**) and a *$implicit* property which contains anything not assigned with a value in the microsyntax, let's see the schema below ↓
+before creating our own structural directive, we need to understand that a directive is made with a context, the context is an object, carrying every properties we need ( the values passed by the *let-\*\** ) and a *$implicit* property which contains anything not assigned with a value in the microsyntax, let's see the schema below ↓
 
 Assumption :
 

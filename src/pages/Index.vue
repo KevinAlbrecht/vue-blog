@@ -51,6 +51,10 @@ section article {
   padding: 50px 0;
   border-bottom: 1px solid #e2e8f0;
 }
+
+section article:first-child {
+  padding-top: 0;
+}
 section article:last-child {
   border: none;
 }

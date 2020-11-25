@@ -1,3 +1,12 @@
+::selection {
+  background: #1a8765;
+  color: white;
+}
+
+em {
+  color: #6d6d6d;
+}
+
 body {
   font-family: "Roboto";
   margin: 0;
@@ -40,5 +49,5 @@ p {
 }
 
 img {
-  max-width:100% ;
+  max-width: 100%;
 }

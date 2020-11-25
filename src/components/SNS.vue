@@ -9,9 +9,9 @@
     <g-link :to="'https://www.linkedin.com/in/albrechtkevin/'"
       ><font-awesome :icon="['fab', 'linkedin']"
     /></g-link>
-    <g-link :to="'mail:kevin.albrecht@outlook.com'"
+    <!-- <g-link :to="'mail:kevin.albrecht@outlook.com'"
       ><font-awesome :icon="['fab', 'email']"
-    /></g-link>
+    /></g-link> -->
   </div>
 </template>
 
