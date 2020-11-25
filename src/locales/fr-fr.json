@@ -16,6 +16,7 @@
 		"about": "A propos"
 	},
 	"about": {
-		"title": "A propos"
+		"title": "A propos",
+		"content": "Développeur Fullstack avec 7 ans d'experience, je suis particulierement attiré par les technologies Microsoft mais j'en suis pas limité"
 	}
 }

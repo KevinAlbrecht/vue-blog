@@ -1,7 +1,7 @@
 ---
 lang: en
 locale: en-us
-title: IoT Hub ou Event Hub, Quels services pour la communication des données dans l’IoT ?
+title: IoT Hub vs Event Hub, what are the use cases?
 date: "2016-03-01"
 description: "Parmi les briques Azures, on trouve 2 éléments particulièrement intéressants pour la communication d'information dans le domaine de l'IoT, nous avons l' Event Hub et l' IoT Hub. Dans cet article nous allons comparer ces services afin de déduire les scénarios d'utilisation adéquats à chacun...."
 tags: ["azure",

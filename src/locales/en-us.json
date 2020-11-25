@@ -16,6 +16,7 @@
 		"about": "About"
 	},
 	"about": {
-		"title": "About me"
+		"title": "About me",
+		"content": ""
 	}
 }

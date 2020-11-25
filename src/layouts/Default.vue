@@ -1,19 +1,19 @@
 <template>
   <div class="layout">
     <header class="header">
-      <strong>
-        <span>{{ $static.metadata.siteName }}</span>
-      </strong>
-      <nav class="nav nav-pages">
-        <g-link class="nav__link" :to="$tp('/')">{{ $t("nav.home") }}</g-link>
-        <g-link class="nav__link" :to="$tp('/about/')">{{
-          $t("nav.about")
-        }}</g-link>
-      </nav>
-      <nav class="nav nav-lang">
+      <nav>
+        <div>
+          <span class="title">Kevin ALBRECHT</span>
+          <g-link class="nav__link" :to="$tp('/')">{{ $t("nav.home") }}</g-link>
+          <g-link class="nav__link" :to="$tp('/about/')">{{
+            $t("nav.about")
+          }}</g-link>
+        </div>
         <locale-switcher></locale-switcher>
       </nav>
+      <SNS></SNS>
     </header>
+
     <slot />
     <footer></footer>
   </div>
@@ -28,8 +28,9 @@ query {
 </static-query>
 <script>
 import LocaleSwitcher from "../components/LocaleSwitcher";
+import SNS from "../components/SNS";
 export default {
-  components: { LocaleSwitcher },
+  components: { LocaleSwitcher, SNS },
 };
 </script>
 <style src="~/assets/styles/style.css"></style>
@@ -43,20 +44,24 @@ export default {
 
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: 20px;
-  height: 80px;
+  height: 120px;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .title {
+  margin-right: 30px;
+  font-weight: 600;
+}
 .nav__link {
-  margin-left: 20px;
+  margin-right: 20px;
 }
-
-.nav-pages {
-  flex: 1;
-}
-
 
 footer {
   height: 50px;
