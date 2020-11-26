@@ -9,7 +9,7 @@
       ></PostHeader>
       <p v-html="$page.post.content"></p>
     </article>
-    <!-- <Disqus shortname="kalbrecht-dev" /> -->
+    <Disqus shortname="kalbrecht-dev" />
   </Layout>
 </template>
 
