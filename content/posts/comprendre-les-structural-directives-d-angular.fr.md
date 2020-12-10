@@ -217,7 +217,7 @@ En fait je dirai que les 2 ont un role bien different, on va répondre à une de
 
 Code complet et démo sur le Stackblitz ci-dessous ↓↓
 
-<iframe src="https://stackblitz.com/edit/kal-structural-directive?embed=1&amp;file=src/app/my.directive.ts" width="770" height="800px"></iframe>
+[https://stackblitz.com/edit/kal-structural-directive?embed=1&amp;file=src/app/my.directive.ts](https://stackblitz.com/edit/kal-structural-directive?embed=1&amp;file=src/app/my.directive.ts)
 
 ## Bonus
 

@@ -8,6 +8,7 @@ import 'prismjs/themes/prism-tomorrow.css'
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import '@fortawesome/fontawesome-svg-core/styles.css'
@@ -17,7 +18,7 @@ export default function (Vue, { head, appOptions }) {
 
 	Vue.prototype.$moment = moment;
 	config.autoAddCss = false;
-	library.add(faGithub, faTwitter, faLinkedin)
+	library.add(faGithub, faTwitter, faLinkedin, faEnvelope)
 
 	// Hot Reload
 	appOptions.i18n.setLocaleMessage('fr-fr', require('./locales/fr-fr.json'));

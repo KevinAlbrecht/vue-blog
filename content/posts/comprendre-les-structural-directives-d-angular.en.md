@@ -197,7 +197,8 @@ I would say the two have differents uses, the components will be preferred for s
 
 Complete code on the Stackblitz below ↓↓
 
-<iframe src="https://stackblitz.com/edit/kal-structural-directive?embed=1&amp;file=src/app/my.directive.ts" width="770" height="800px"></iframe>
+[https://stackblitz.com/edit/kal-structural-directive?embed=1&amp;file=src/app/my.directive.ts](https://stackblitz.com/edit/kal-structural-directive?embed=1&amp;file=src/app/my.directive.ts)
+
 
 ## Bonus
 
