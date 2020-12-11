@@ -30,22 +30,25 @@ module.exports = {
 		{
 			use: '@gridsome/plugin-google-analytics',
 			options: {
-				id: 'G-TCWL34Z756'
+				id: 'G-X3J8H29RBT'
 			}
 		},
 		{
 			use: "gridsome-plugin-i18n",
 			options: {
 				locales: [
-					'fr-fr',
-					'en-us'
+					'en-us',
+					'fr-fr'
 				],
 				pathAliases: {
-					'fr-fr': 'fr',
-					'en-us': 'en'
+					'en-us': 'en',
+					'fr-fr': 'fr'
 				},
-				defaultLocale: 'en-us',
 				enablePathRewrite: true,
+				messages : {
+					"en-us": require('./src/locales/en-us.json'),
+					"fr-fr": require('./src/locales/fr-fr.json')
+				}
 			}
 		},
 		{
