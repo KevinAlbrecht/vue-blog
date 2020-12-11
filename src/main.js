@@ -21,8 +21,8 @@ export default function (Vue, { head, appOptions }) {
 	library.add(faGithub, faTwitter, faLinkedin, faEnvelope)
 
 	// Hot Reload
-	appOptions.i18n.setLocaleMessage('fr-fr', require('./locales/fr-fr.json'));
-	appOptions.i18n.setLocaleMessage('en-us', require('./locales/en-us.json'));
+	// appOptions.i18n.setLocaleMessage('fr-fr', require('./locales/fr-fr.json'));
+	// appOptions.i18n.setLocaleMessage('en-us', require('./locales/en-us.json'));
 
 	head.meta.push({
 		name: 'google-site-verification',
