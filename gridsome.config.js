@@ -46,6 +46,7 @@ module.exports = {
 				},
 				defaultLocale: "en-us",
 				enablePathRewrite: true,
+				rewriteDefaultLanguage: false,
 				messages: {
 					"en-us": require('./src/locales/en-us.json'),
 					"fr-fr": require('./src/locales/fr-fr.json')

@@ -39,12 +39,7 @@ export default {
   components: { PostPreview },
   metaInfo: {
     title: "Hello, world!",
-  },
-  beforeMount: () => {
-// HACK, ISSUE in gridsome-i18n
-    if (window.location.pathname === "/")
-      this.$tp("/", this.currentLocale, true);
-  },
+  }
 };
 </script>
 
