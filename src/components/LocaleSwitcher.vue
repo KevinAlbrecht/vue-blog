@@ -27,11 +27,7 @@ export default {
       currentLocale: this.$i18n.locale.toString(),
       availableLocales: this.$i18n.availableLocales,
     };
-  },
-  mounted: function (){
-    // HACK, ISSUE in gridsome-i18n
-    if (window.location.pathname === "/") window.location.pathname= this.currentLocale.split('-')[0];
-  },
+  }
 };
 </script>
 
