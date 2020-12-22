@@ -9,7 +9,7 @@
 </template>
 
 <page-query>
-query ($locale: String){
+query ($locale: String ="en-us"){
   posts: allPost(filter: { locale: {eq:$locale} } sortBy: "date", order: DESC ) {
     totalCount
     edges {
