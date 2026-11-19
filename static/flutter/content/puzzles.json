@@ -1,0 +1,1488 @@
+{
+  "levels": [
+    {
+      "id": 1,
+      "type": 1,
+      "theme": "",
+      "puzzleIds": [21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+    }
+  ],
+  "puzzles": [
+    {
+      "id": 21,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "にかいからめぐすり",
+      "answerToDisplay": "２階から目薬",
+      "charactersMap": [1, 2, 2, 1, 3],
+      "options": [
+        {
+          "character": "に",
+          "count": 1
+        },
+        {
+          "character": "す",
+          "count": 1
+        },
+        {
+          "character": "い",
+          "count": 1
+        },
+        {
+          "character": "め",
+          "count": 1
+        },
+        {
+          "character": "ぐ",
+          "count": 1
+        },
+        {
+          "character": "か",
+          "count": 2
+        },
+        {
+          "character": "り",
+          "count": 1
+        },
+        {
+          "character": "ら",
+          "count": 1
+        }
+      ],
+      "imageSrc": "２階から目薬.webp",
+      "meaning": "回りくどくて効果がないこと。思うようにいかず、もどかしいこと。",
+      "explanation": "ビルのように大きな「目」の字があり、その二階の部分に「薬」と書かれている。"
+    },
+    {
+      "id": 22,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "いちごいちえ",
+      "answerToDisplay": "一期一会",
+      "charactersMap": [2, 1, 2, 1],
+      "options": [
+        {
+          "character": "ち",
+          "count": 2
+        },
+        {
+          "character": "え",
+          "count": 1
+        },
+        {
+          "character": "い",
+          "count": 2
+        },
+        {
+          "character": "ご",
+          "count": 1
+        }
+      ],
+      "imageSrc": "一期一会.webp",
+      "meaning": "一生に一度しかない出会いを大切にすること。",
+      "explanation": "人生の流れ（始まりから終わり）を表す線の中に、たった一つだけ印があり、一度きりの出会いを表している。"
+    },
+    {
+      "id": 23,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "いっせきにとり",
+      "answerToDisplay": "一石二鳥",
+      "charactersMap": [2, 2, 1, 2],
+      "options": [
+        {
+          "character": "に",
+          "count": 1
+        },
+        {
+          "character": "せ",
+          "count": 1
+        },
+        {
+          "character": "と",
+          "count": 1
+        },
+        {
+          "character": "っ",
+          "count": 1
+        },
+        {
+          "character": "き",
+          "count": 1
+        },
+        {
+          "character": "り",
+          "count": 1
+        },
+        {
+          "character": "い",
+          "count": 1
+        }
+      ],
+      "imageSrc": "一石二鳥.webp",
+      "meaning": "一つのことをするだけで、二つ良いことが起こる。",
+      "explanation": "二羽の鳥と一つの石が見える。"
+    },
+    {
+      "id": 24,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "おかねのもうじゃ",
+      "answerToDisplay": "お金の亡者",
+      "charactersMap": [1, 2, 1, 4],
+      "options": [
+        {
+          "character": "う",
+          "count": 1
+        },
+        {
+          "character": "の",
+          "count": 1
+        },
+        {
+          "character": "も",
+          "count": 1
+        },
+        {
+          "character": "ゃ",
+          "count": 1
+        },
+        {
+          "character": "お",
+          "count": 1
+        },
+        {
+          "character": "か",
+          "count": 1
+        },
+        {
+          "character": "じ",
+          "count": 1
+        },
+        {
+          "character": "ね",
+          "count": 1
+        }
+      ],
+      "imageSrc": "お金の亡者.webp",
+      "meaning": "お金に取りつかれて、お金のことしか考えない人。",
+      "explanation": "お金を表す円記号が、幽霊がつける天冠（三角の白い布）をつけている。"
+    },
+    {
+      "id": 25,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "いっぴきおおかみ",
+      "answerToDisplay": "一匹狼",
+      "charactersMap": [2, 2, 4],
+      "options": [
+        {
+          "character": "っ",
+          "count": 1
+        },
+        {
+          "character": "き",
+          "count": 1
+        },
+        {
+          "character": "い",
+          "count": 1
+        },
+        {
+          "character": "か",
+          "count": 1
+        },
+        {
+          "character": "ぴ",
+          "count": 1
+        },
+        {
+          "character": "み",
+          "count": 1
+        },
+        {
+          "character": "お",
+          "count": 2
+        }
+      ],
+      "imageSrc": "一匹狼.webp",
+      "meaning": "群れずに、一人で行動する人。",
+      "explanation": "「狼」の字がたった一つだけ描かれている。"
+    },
+    {
+      "id": 26,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "いっちょういっせき",
+      "answerToDisplay": "一朝一夕",
+      "charactersMap": [2, 3, 2, 2],
+      "options": [
+        {
+          "character": "き",
+          "count": 1
+        },
+        {
+          "character": "っ",
+          "count": 2
+        },
+        {
+          "character": "せ",
+          "count": 1
+        },
+        {
+          "character": "い",
+          "count": 2
+        },
+        {
+          "character": "ち",
+          "count": 1
+        },
+        {
+          "character": "う",
+          "count": 1
+        },
+        {
+          "character": "ょ",
+          "count": 1
+        }
+      ],
+      "imageSrc": "一朝一夕.webp",
+      "meaning": "ごくわずかな期間のこと。",
+      "explanation": "「朝」と「夕」の字だけが描かれている。ほんの短い時間を表している。"
+    },
+    {
+      "id": 27,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "うえをしたへのおおさわぎ",
+      "answerToDisplay": "上を下の大騒ぎ",
+      "charactersMap": [2, 1, 2, 1, 1, 5],
+      "options": [
+        {
+          "character": "し",
+          "count": 1
+        },
+        {
+          "character": "を",
+          "count": 1
+        },
+        {
+          "character": "ぎ",
+          "count": 1
+        },
+        {
+          "character": "さ",
+          "count": 1
+        },
+        {
+          "character": "の",
+          "count": 1
+        },
+        {
+          "character": "お",
+          "count": 2
+        },
+        {
+          "character": "へ",
+          "count": 1
+        },
+        {
+          "character": "え",
+          "count": 1
+        },
+        {
+          "character": "わ",
+          "count": 1
+        },
+        {
+          "character": "う",
+          "count": 1
+        },
+        {
+          "character": "た",
+          "count": 1
+        }
+      ],
+      "imageSrc": "上を下の大騒ぎ.webp",
+      "meaning": "大勢が混乱して、秩序なく大騒ぎになること。",
+      "explanation": "「騒」の字が上下さかさまになり、さらに大きくなっている。"
+    },
+    {
+      "id": 28,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "にとをおうものはいっとをもえず",
+      "answerToDisplay": "二兎を追う者は一兎をも得ず",
+      "charactersMap": [1, 1, 1, 2, 2, 1, 2, 1, 1, 1, 2],
+      "options": [
+        {
+          "character": "う",
+          "count": 1
+        },
+        {
+          "character": "ず",
+          "count": 1
+        },
+        {
+          "character": "い",
+          "count": 1
+        },
+        {
+          "character": "お",
+          "count": 1
+        },
+        {
+          "character": "に",
+          "count": 1
+        },
+        {
+          "character": "っ",
+          "count": 1
+        },
+        {
+          "character": "と",
+          "count": 2
+        },
+        {
+          "character": "を",
+          "count": 2
+        },
+        {
+          "character": "の",
+          "count": 1
+        },
+        {
+          "character": "え",
+          "count": 1
+        },
+        {
+          "character": "は",
+          "count": 1
+        },
+        {
+          "character": "も",
+          "count": 2
+        }
+      ],
+      "imageSrc": "二兎を追う者は一兎をも得ず.webp",
+      "meaning": "同時に二つのことをしようとすると、どちらも失敗する。",
+      "explanation": "「兎兎＝ゼロ」と書かれている。二兎を追った結果、何も得られなかったことを表している。"
+    },
+    {
+      "id": 29,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "いのなかのかわず",
+      "answerToDisplay": "井の中の蛙",
+      "charactersMap": [1, 1, 2, 1, 3],
+      "options": [
+        {
+          "character": "か",
+          "count": 2
+        },
+        {
+          "character": "な",
+          "count": 1
+        },
+        {
+          "character": "わ",
+          "count": 1
+        },
+        {
+          "character": "ず",
+          "count": 1
+        },
+        {
+          "character": "い",
+          "count": 1
+        },
+        {
+          "character": "の",
+          "count": 2
+        }
+      ],
+      "imageSrc": "井の中の蛙.webp",
+      "meaning": "狭い世界しか知らず、広い世界があることに気づかないこと。",
+      "explanation": "「井」の字の中に、蛙の鳴き声の「ゲロ」が書かれている。"
+    },
+    {
+      "id": 30,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "はっぽうびじん",
+      "answerToDisplay": "八方美人",
+      "charactersMap": [2, 2, 1, 2],
+      "options": [
+        {
+          "character": "っ",
+          "count": 1
+        },
+        {
+          "character": "び",
+          "count": 1
+        },
+        {
+          "character": "う",
+          "count": 1
+        },
+        {
+          "character": "は",
+          "count": 1
+        },
+        {
+          "character": "ぽ",
+          "count": 1
+        },
+        {
+          "character": "じ",
+          "count": 1
+        },
+        {
+          "character": "ん",
+          "count": 1
+        }
+      ],
+      "imageSrc": "八方美人.webp",
+      "meaning": "誰からもよく思われようと、愛想よく振る舞う人。",
+      "explanation": "「人」の字のまわりを、八つの「美」の字が囲んでいる。"
+    },
+    {
+      "id": 31,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "でるくいはうたれる",
+      "answerToDisplay": "出る杭は打たれる",
+      "charactersMap": [2, 2, 1, 4],
+      "options": [
+        {
+          "character": "く",
+          "count": 1
+        },
+        {
+          "character": "た",
+          "count": 1
+        },
+        {
+          "character": "い",
+          "count": 1
+        },
+        {
+          "character": "る",
+          "count": 2
+        },
+        {
+          "character": "で",
+          "count": 1
+        },
+        {
+          "character": "は",
+          "count": 1
+        },
+        {
+          "character": "れ",
+          "count": 1
+        },
+        {
+          "character": "う",
+          "count": 1
+        }
+      ],
+      "imageSrc": "出る杭は打たれる.webp",
+      "meaning": "目立つ人や才能のある人は、周りから妬まれ、非難されやすい。",
+      "explanation": "「杭」の字がずらりと並んでいる。その中の一つは大きかったが、透けていて、もうそこにはなく、ほかと同じ大きさの「杭」に置き換わっている。"
+    },
+    {
+      "id": 32,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "じゅうにんといろ",
+      "answerToDisplay": "十人十色",
+      "charactersMap": [3, 2, 1, 2],
+      "options": [
+        {
+          "character": "ろ",
+          "count": 1
+        },
+        {
+          "character": "じ",
+          "count": 1
+        },
+        {
+          "character": "い",
+          "count": 1
+        },
+        {
+          "character": "う",
+          "count": 1
+        },
+        {
+          "character": "ん",
+          "count": 1
+        },
+        {
+          "character": "ゅ",
+          "count": 1
+        },
+        {
+          "character": "と",
+          "count": 1
+        },
+        {
+          "character": "に",
+          "count": 1
+        }
+      ],
+      "imageSrc": "十人十色.webp",
+      "meaning": "好みや考え方は、人それぞれ違うということ。",
+      "explanation": "「人」の字が十個並び、それぞれの下に、違う色の「色」の字がある。"
+    },
+    {
+      "id": 33,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "いっちょういったん",
+      "answerToDisplay": "一長一短",
+      "charactersMap": [2, 3, 2, 2],
+      "options": [
+        {
+          "character": "た",
+          "count": 1
+        },
+        {
+          "character": "ち",
+          "count": 1
+        },
+        {
+          "character": "っ",
+          "count": 2
+        },
+        {
+          "character": "い",
+          "count": 2
+        },
+        {
+          "character": "ん",
+          "count": 1
+        },
+        {
+          "character": "う",
+          "count": 1
+        },
+        {
+          "character": "ょ",
+          "count": 1
+        }
+      ],
+      "imageSrc": "一長一短.webp",
+      "meaning": "長所もあれば、短所もあること。",
+      "explanation": "縦の線が二本あり、一本は長く、もう一本は短い。"
+    },
+    {
+      "id": 34,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "はんしんはんぎ",
+      "answerToDisplay": "半信半疑",
+      "charactersMap": [2, 2, 2, 1],
+      "options": [
+        {
+          "character": "ん",
+          "count": 3
+        },
+        {
+          "character": "は",
+          "count": 2
+        },
+        {
+          "character": "ぎ",
+          "count": 1
+        },
+        {
+          "character": "し",
+          "count": 1
+        }
+      ],
+      "imageSrc": "半信半疑.webp",
+      "meaning": "半分信じ、半分疑っている状態。",
+      "explanation": "「信＋疑＝100％」と書かれている。信じる気持ちと疑う気持ちが、半分ずつであることを表している。"
+    },
+    {
+      "id": 35,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "くちはわざわいのもと",
+      "answerToDisplay": "口は災いの元",
+      "charactersMap": [2, 1, 4, 1, 2],
+      "options": [
+        {
+          "character": "と",
+          "count": 1
+        },
+        {
+          "character": "は",
+          "count": 1
+        },
+        {
+          "character": "わ",
+          "count": 2
+        },
+        {
+          "character": "も",
+          "count": 1
+        },
+        {
+          "character": "ち",
+          "count": 1
+        },
+        {
+          "character": "の",
+          "count": 1
+        },
+        {
+          "character": "い",
+          "count": 1
+        },
+        {
+          "character": "ざ",
+          "count": 1
+        },
+        {
+          "character": "く",
+          "count": 1
+        }
+      ],
+      "imageSrc": "口は災いの元.webp",
+      "meaning": "不用意な発言が、災難を招くもとになる。",
+      "explanation": "大きな「口」の字から、小さな「火」の字がたくさん飛び出している。"
+    },
+    {
+      "id": 36,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "ちりもつもればやまとなる",
+      "answerToDisplay": "塵も積もれば山となる",
+      "charactersMap": [2, 1, 4, 2, 1, 2],
+      "options": [
+        {
+          "character": "ま",
+          "count": 1
+        },
+        {
+          "character": "ち",
+          "count": 1
+        },
+        {
+          "character": "れ",
+          "count": 1
+        },
+        {
+          "character": "つ",
+          "count": 1
+        },
+        {
+          "character": "と",
+          "count": 1
+        },
+        {
+          "character": "や",
+          "count": 1
+        },
+        {
+          "character": "ば",
+          "count": 1
+        },
+        {
+          "character": "り",
+          "count": 1
+        },
+        {
+          "character": "も",
+          "count": 2
+        },
+        {
+          "character": "な",
+          "count": 1
+        },
+        {
+          "character": "る",
+          "count": 1
+        }
+      ],
+      "imageSrc": "塵も積もれば山となる.webp",
+      "meaning": "わずかなものでも、積み重なれば大きなものになる。",
+      "explanation": "「塵」の字が積み重なって、二つの山の形になっている。"
+    },
+    {
+      "id": 37,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "たいきばんせい",
+      "answerToDisplay": "大器晩成",
+      "charactersMap": [2, 1, 2, 2],
+      "options": [
+        {
+          "character": "い",
+          "count": 2
+        },
+        {
+          "character": "せ",
+          "count": 1
+        },
+        {
+          "character": "き",
+          "count": 1
+        },
+        {
+          "character": "た",
+          "count": 1
+        },
+        {
+          "character": "ん",
+          "count": 1
+        },
+        {
+          "character": "ば",
+          "count": 1
+        }
+      ],
+      "imageSrc": "大器晩成.webp",
+      "meaning": "大人物は、遅れて才能が現れるということ。",
+      "explanation": "朝、昼、夕方と時間が進んでいき、その下で「器」の字がだんだん大きくなっている。"
+    },
+    {
+      "id": 38,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "しんきいってん",
+      "answerToDisplay": "心機一転",
+      "charactersMap": [2, 1, 2, 2],
+      "options": [
+        {
+          "character": "い",
+          "count": 1
+        },
+        {
+          "character": "ん",
+          "count": 2
+        },
+        {
+          "character": "き",
+          "count": 1
+        },
+        {
+          "character": "し",
+          "count": 1
+        },
+        {
+          "character": "て",
+          "count": 1
+        },
+        {
+          "character": "っ",
+          "count": 1
+        }
+      ],
+      "imageSrc": "心機一転.webp",
+      "meaning": "何かをきっかけに、気持ちをすっかり入れ替えること。",
+      "explanation": "「心」の字が転がっている。"
+    },
+    {
+      "id": 39,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "いきがあう",
+      "answerToDisplay": "息が合う",
+      "charactersMap": [2, 1, 2],
+      "options": [
+        {
+          "character": "が",
+          "count": 1
+        },
+        {
+          "character": "う",
+          "count": 1
+        },
+        {
+          "character": "き",
+          "count": 1
+        },
+        {
+          "character": "あ",
+          "count": 1
+        },
+        {
+          "character": "い",
+          "count": 1
+        }
+      ],
+      "imageSrc": "息が合う.webp",
+      "meaning": "お互いの調子や気持ちが、ぴったり合うこと。",
+      "explanation": "いくつもの「息」の字が、それぞれの枠にうまく収まっていない。その中で一つだけ、枠にぴったり合っている。"
+    },
+    {
+      "id": 40,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "ときのひと",
+      "answerToDisplay": "時の人",
+      "charactersMap": [2, 1, 2],
+      "options": [
+        {
+          "character": "き",
+          "count": 1
+        },
+        {
+          "character": "と",
+          "count": 2
+        },
+        {
+          "character": "ひ",
+          "count": 1
+        },
+        {
+          "character": "の",
+          "count": 1
+        }
+      ],
+      "imageSrc": "時の人.webp",
+      "meaning": "今、世間で話題になっている人。",
+      "explanation": "小さな「人」の字がずらりと並び、真ん中に大きな「人」が一つだけある。その真上に「現在」と書かれている。"
+    },
+    {
+      "id": 41,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "ゆうげんじっこう",
+      "answerToDisplay": "有言実行",
+      "charactersMap": [2, 2, 2, 2],
+      "options": [
+        {
+          "character": "う",
+          "count": 2
+        },
+        {
+          "character": "ゆ",
+          "count": 1
+        },
+        {
+          "character": "じ",
+          "count": 1
+        },
+        {
+          "character": "げ",
+          "count": 1
+        },
+        {
+          "character": "こ",
+          "count": 1
+        },
+        {
+          "character": "ん",
+          "count": 1
+        },
+        {
+          "character": "っ",
+          "count": 1
+        }
+      ],
+      "imageSrc": "有言実行.webp",
+      "meaning": "口にしたことを、必ず実行すること。",
+      "explanation": "「言」の字には取り消し線が引かれ、「やる」の文字だけが線を引かれずに残っている。"
+    },
+    {
+      "id": 42,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "ほんまつてんとう",
+      "answerToDisplay": "本末転倒",
+      "charactersMap": [2, 2, 2, 2],
+      "options": [
+        {
+          "character": "つ",
+          "count": 1
+        },
+        {
+          "character": "ん",
+          "count": 2
+        },
+        {
+          "character": "ほ",
+          "count": 1
+        },
+        {
+          "character": "と",
+          "count": 1
+        },
+        {
+          "character": "う",
+          "count": 1
+        },
+        {
+          "character": "ま",
+          "count": 1
+        },
+        {
+          "character": "て",
+          "count": 1
+        }
+      ],
+      "imageSrc": "本末転倒.webp",
+      "meaning": "大切なことと、そうでないことを取り違えること。",
+      "explanation": "「1.先　2.元」と書かれている。本来は元（本）が先で、先（末）があとのはずが、逆になっている。"
+    },
+    {
+      "id": 43,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "さくらははなにあらわれる",
+      "answerToDisplay": "桜は花に顕われる",
+      "charactersMap": [3, 1, 2, 1, 5],
+      "options": [
+        {
+          "character": "れ",
+          "count": 1
+        },
+        {
+          "character": "く",
+          "count": 1
+        },
+        {
+          "character": "わ",
+          "count": 1
+        },
+        {
+          "character": "に",
+          "count": 1
+        },
+        {
+          "character": "は",
+          "count": 2
+        },
+        {
+          "character": "あ",
+          "count": 1
+        },
+        {
+          "character": "さ",
+          "count": 1
+        },
+        {
+          "character": "な",
+          "count": 1
+        },
+        {
+          "character": "ら",
+          "count": 2
+        },
+        {
+          "character": "る",
+          "count": 1
+        }
+      ],
+      "imageSrc": "桜は花に顕われる.webp",
+      "meaning": "平凡な人々にまぎれていた人が、何かの機会に優れた才能を発揮することのたとえ。",
+      "explanation": "とても小さな「桜」の字が、「はな」の文字の中に入っている。"
+    },
+    {
+      "id": 44,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "とうだいもとくらし",
+      "answerToDisplay": "灯台下暗し",
+      "charactersMap": [4, 2, 3],
+      "options": [
+        {
+          "character": "く",
+          "count": 1
+        },
+        {
+          "character": "い",
+          "count": 1
+        },
+        {
+          "character": "し",
+          "count": 1
+        },
+        {
+          "character": "だ",
+          "count": 1
+        },
+        {
+          "character": "も",
+          "count": 1
+        },
+        {
+          "character": "と",
+          "count": 2
+        },
+        {
+          "character": "う",
+          "count": 1
+        },
+        {
+          "character": "ら",
+          "count": 1
+        }
+      ],
+      "imageSrc": "灯台下暗し.webp",
+      "meaning": "身近なことは、かえって気づきにくいということ。",
+      "explanation": "画像が横に二つに分かれ、上は白い背景に「灯台」の字があり、下は真っ黒に塗られている。"
+    },
+    {
+      "id": 45,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "さるもきからおちる",
+      "answerToDisplay": "猿も木から落ちる",
+      "charactersMap": [2, 1, 1, 2, 3],
+      "options": [
+        {
+          "character": "も",
+          "count": 1
+        },
+        {
+          "character": "ち",
+          "count": 1
+        },
+        {
+          "character": "き",
+          "count": 1
+        },
+        {
+          "character": "ら",
+          "count": 1
+        },
+        {
+          "character": "る",
+          "count": 2
+        },
+        {
+          "character": "か",
+          "count": 1
+        },
+        {
+          "character": "お",
+          "count": 1
+        },
+        {
+          "character": "さ",
+          "count": 1
+        }
+      ],
+      "imageSrc": "猿も木から落ちる.webp",
+      "meaning": "その道の達人でも、時には失敗することがある。",
+      "explanation": "大きな「木」の字の横を、とても小さな「猿」の字が落ちていく。"
+    },
+    {
+      "id": 46,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "いくどうおん",
+      "answerToDisplay": "異口同音",
+      "charactersMap": [1, 1, 2, 2],
+      "options": [
+        {
+          "character": "う",
+          "count": 1
+        },
+        {
+          "character": "ん",
+          "count": 1
+        },
+        {
+          "character": "ど",
+          "count": 1
+        },
+        {
+          "character": "く",
+          "count": 1
+        },
+        {
+          "character": "お",
+          "count": 1
+        },
+        {
+          "character": "い",
+          "count": 1
+        }
+      ],
+      "imageSrc": "異口同音.webp",
+      "meaning": "大勢の人が、口をそろえて同じことを言うこと。",
+      "explanation": "いろいろな色の「口」の字がたくさんあり、どれも吹き出しの中で同じことを言っている。"
+    },
+    {
+      "id": 47,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "めがまわる",
+      "answerToDisplay": "目が回る",
+      "charactersMap": [1, 1, 3],
+      "options": [
+        {
+          "character": "る",
+          "count": 1
+        },
+        {
+          "character": "ま",
+          "count": 1
+        },
+        {
+          "character": "が",
+          "count": 1
+        },
+        {
+          "character": "め",
+          "count": 1
+        },
+        {
+          "character": "わ",
+          "count": 1
+        }
+      ],
+      "imageSrc": "目が回る.webp",
+      "meaning": "非常に忙しいこと。",
+      "explanation": "たくさんの「目」の字が、円を描くように並んでいる。"
+    },
+    {
+      "id": 48,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "いしのうえにもさんねん",
+      "answerToDisplay": "石の上にも三年",
+      "charactersMap": [2, 1, 2, 2, 4],
+      "options": [
+        {
+          "character": "う",
+          "count": 1
+        },
+        {
+          "character": "に",
+          "count": 1
+        },
+        {
+          "character": "し",
+          "count": 1
+        },
+        {
+          "character": "も",
+          "count": 1
+        },
+        {
+          "character": "ね",
+          "count": 1
+        },
+        {
+          "character": "さ",
+          "count": 1
+        },
+        {
+          "character": "い",
+          "count": 1
+        },
+        {
+          "character": "の",
+          "count": 1
+        },
+        {
+          "character": "え",
+          "count": 1
+        },
+        {
+          "character": "ん",
+          "count": 2
+        }
+      ],
+      "imageSrc": "石の上にも三年.webp",
+      "meaning": "つらくても我慢強く続ければ、いつか成果が出る。",
+      "explanation": "「石」の字の上に、「三年」の字がのっている。"
+    },
+    {
+      "id": 49,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "さくしさくにおぼれる",
+      "answerToDisplay": "策士策に溺れる",
+      "charactersMap": [3, 2, 1, 4],
+      "options": [
+        {
+          "character": "く",
+          "count": 2
+        },
+        {
+          "character": "に",
+          "count": 1
+        },
+        {
+          "character": "ぼ",
+          "count": 1
+        },
+        {
+          "character": "る",
+          "count": 1
+        },
+        {
+          "character": "さ",
+          "count": 2
+        },
+        {
+          "character": "れ",
+          "count": 1
+        },
+        {
+          "character": "お",
+          "count": 1
+        },
+        {
+          "character": "し",
+          "count": 1
+        }
+      ],
+      "imageSrc": "策士策に溺れる.webp",
+      "meaning": "策略にたけた人が、策を弄しすぎて失敗する。",
+      "explanation": "「策」の字が、水の中に沈んでいる。"
+    },
+    {
+      "id": 50,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "みみにたこができる",
+      "answerToDisplay": "耳にたこが出来る",
+      "charactersMap": [2, 1, 2, 1, 3],
+      "options": [
+        {
+          "character": "に",
+          "count": 1
+        },
+        {
+          "character": "こ",
+          "count": 1
+        },
+        {
+          "character": "で",
+          "count": 1
+        },
+        {
+          "character": "る",
+          "count": 1
+        },
+        {
+          "character": "き",
+          "count": 1
+        },
+        {
+          "character": "た",
+          "count": 1
+        },
+        {
+          "character": "み",
+          "count": 2
+        },
+        {
+          "character": "が",
+          "count": 1
+        }
+      ],
+      "imageSrc": "耳にたこが出来る.webp",
+      "meaning": "同じことを何度も聞かされて、うんざりする。",
+      "explanation": "「耳」の字の中に、いくつもの「たこ」の文字が書かれている。"
+    },
+    {
+      "id": 51,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "かえるのこはかえる",
+      "answerToDisplay": "蛙の子は蛙",
+      "charactersMap": [3, 1, 1, 1, 3],
+      "options": [
+        {
+          "character": "の",
+          "count": 1
+        },
+        {
+          "character": "る",
+          "count": 2
+        },
+        {
+          "character": "こ",
+          "count": 1
+        },
+        {
+          "character": "え",
+          "count": 2
+        },
+        {
+          "character": "は",
+          "count": 1
+        },
+        {
+          "character": "か",
+          "count": 2
+        }
+      ],
+      "imageSrc": "蛙の子は蛙.webp",
+      "meaning": "子は親に似るもので、親と同じ道を歩むものだ。",
+      "explanation": "大きな「蛙」の字と小さな「蛙」の字が、イコールで結ばれている。"
+    },
+    {
+      "id": 52,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "こしがひくい",
+      "answerToDisplay": "腰が低い",
+      "charactersMap": [2, 1, 3],
+      "options": [
+        {
+          "character": "く",
+          "count": 1
+        },
+        {
+          "character": "ひ",
+          "count": 1
+        },
+        {
+          "character": "が",
+          "count": 1
+        },
+        {
+          "character": "い",
+          "count": 1
+        },
+        {
+          "character": "こ",
+          "count": 1
+        },
+        {
+          "character": "し",
+          "count": 1
+        }
+      ],
+      "imageSrc": "輿が低い.webp",
+      "meaning": "偉ぶらず、他人に対して控えめである。",
+      "explanation": "大きな「腰」の字と小さな「腰」の字が並び、小さいほうが目立つように強調されている。"
+    },
+    {
+      "id": 53,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "かねのきれめがえんのきれめ",
+      "answerToDisplay": "金の切れ目が縁の切れ目",
+      "charactersMap": [2, 1, 3, 1, 2, 1, 3],
+      "options": [
+        {
+          "character": "き",
+          "count": 2
+        },
+        {
+          "character": "ね",
+          "count": 1
+        },
+        {
+          "character": "れ",
+          "count": 2
+        },
+        {
+          "character": "の",
+          "count": 2
+        },
+        {
+          "character": "え",
+          "count": 1
+        },
+        {
+          "character": "め",
+          "count": 2
+        },
+        {
+          "character": "ん",
+          "count": 1
+        },
+        {
+          "character": "が",
+          "count": 1
+        },
+        {
+          "character": "か",
+          "count": 1
+        }
+      ],
+      "imageSrc": "金の切れ目が縁の切れ目.webp",
+      "meaning": "お金がなくなると、人との縁も切れてしまう。",
+      "explanation": "「おかね」と「つながり」の文字が、どちらも最後の一文字のところで、同じように切られている。"
+    },
+    {
+      "id": 54,
+      "levelId": 1,
+      "type": 1,
+      "theme": "",
+      "answer": "ちょうしょはたんしょ",
+      "answerToDisplay": "長所は短所",
+      "charactersMap": [5, 1, 4],
+      "options": [
+        {
+          "character": "う",
+          "count": 1
+        },
+        {
+          "character": "た",
+          "count": 1
+        },
+        {
+          "character": "ち",
+          "count": 1
+        },
+        {
+          "character": "は",
+          "count": 1
+        },
+        {
+          "character": "ん",
+          "count": 1
+        },
+        {
+          "character": "し",
+          "count": 2
+        },
+        {
+          "character": "ょ",
+          "count": 3
+        }
+      ],
+      "imageSrc": "長所は短所.webp",
+      "meaning": "長所と短所は表裏一体で、見方によって入れ替わる。",
+      "explanation": "「長＝短」と書かれている。長所と短所が同じものだと言っている。"
+    }
+  ]
+}
